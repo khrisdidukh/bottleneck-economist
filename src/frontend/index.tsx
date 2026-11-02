@@ -92,6 +92,7 @@ function Onboarding({ projectKey, onDone, onDemo, onCancel }: { projectKey: stri
   const [preset, setPreset] = useState('software');
   const [custom, setCustom] = useState<Any>(PRESETS.software);
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState('');
 
   useEffect(() => {
     invoke('getSetup', { projectKey }).then((r: Any) => {
@@ -110,13 +111,16 @@ function Onboarding({ projectKey, onDone, onDemo, onCancel }: { projectKey: stri
   ];
   const finish = async () => {
     setSaving(true);
-    await invoke('saveSetup', { projectKey, kinds, preset, money: { hourlyCost: custom.hourlyCost, valuePerItem: custom.valuePerItem, costOfDelayPerItemWeek: custom.costOfDelayPerItemWeek } });
+    const r: Any = await invoke('saveSetup', { projectKey, kinds, preset, money: { hourlyCost: custom.hourlyCost, valuePerItem: custom.valuePerItem, costOfDelayPerItemWeek: custom.costOfDelayPerItemWeek } });
+    setSaving(false);
+    if (r?.error) { setSaveError(r.error); return; }
     onDone();
   };
 
   return (
     <Stack space="space.300">
       <ProgressTracker items={items} />
+      {saveError ? <SectionMessage appearance="warning" title="Not saved"><Text>{saveError}</Text></SectionMessage> : null}
       {step === 0 ? (
         <Box xcss={hero}>
           <Stack space="space.200">
@@ -218,7 +222,13 @@ function ReportView({ state, reload }: { state: Any; reload: (demo?: boolean) =>
     setShareMsg(r?.published ? 'Published to the Teamwork Graph.' : `Not published: ${r?.errors?.[0] ?? r?.error ?? r?.reason ?? 'no connection follows this project'}`);
     if (r?.published) await reload(state.demo);
   };
-  const saveAssumptions = async () => { await invoke('setAssumptions', { projectKey: state.demo ? 'DEMO' : state.projectKey, ...assume }); await reload(state.demo); };
+  const [assumeMsg, setAssumeMsg] = useState('');
+  const saveAssumptions = async () => {
+    const r: Any = await invoke('setAssumptions', { projectKey: state.demo ? 'DEMO' : state.projectKey, ...assume });
+    if (r?.status === 'forbidden') { setAssumeMsg(r.message); return; }
+    setAssumeMsg('');
+    await reload(state.demo);
+  };
 
   const optionsTable = {
     head: { cells: [
@@ -448,6 +458,7 @@ function ReportView({ state, reload }: { state: Any; reload: (demo?: boolean) =>
                 <Stack space="space.050"><Text size="small">Cost of one week of delay per item ({cur})</Text><Textfield name="cod" type="number" value={String(assume?.costOfDelayPerItemWeek ?? '')} onChange={(e: Any) => setAssume({ ...assume, costOfDelayPerItemWeek: Number(e.target.value) })} /></Stack>
               </Inline>
               <Button appearance="primary" onClick={saveAssumptions}>Save and re-price</Button>
+              {assumeMsg ? <Text size="small">{assumeMsg}</Text> : null}
             </Stack>
           </Box>
         </TabPanel>
@@ -514,7 +525,9 @@ function App() {
         </SectionMessage>
       ) : null}
       {job?.status === 'failed' ? <SectionMessage appearance="error" title="Analysis failed"><Text>{job.error}</Text></SectionMessage> : null}
-      {state?.report ? <ReportView state={state} reload={load} /> : !job ? (
+      {state?.forbidden ? (
+        <SectionMessage appearance="warning" title="No access to this project"><Text>You need permission to browse this project to see its analysis. You can still open the demo.</Text><Button onClick={() => load(true)}>Open the demo</Button></SectionMessage>
+      ) : state?.report ? <ReportView state={state} reload={load} /> : !job ? (
         <SectionMessage appearance="discovery" title="No analysis yet"><Button appearance="primary" onClick={() => setOnboarding(true)}>Set up this project</Button></SectionMessage>
       ) : null}
     </Stack>

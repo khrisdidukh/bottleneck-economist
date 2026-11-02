@@ -8,6 +8,7 @@ import { buildReport, compact, fromFlow, whatIf, type Report } from './engine/re
 import type { Scenario } from './engine/economist';
 import { DEFAULT_MONEY, type MoneyAssumptions, type StatusConfig, type StatusKind } from './engine/types';
 import { DEMO_FLOW, DEMO_SOURCE } from './demo/cassandra';
+import { DENIED, DENIED_ADMIN, userCan } from './permissions';
 import { connections, handleConnectionChange, handleTask, lastPublished, publishReport, validateConnection, type Sync } from './graph';
 import type { IssueHistory } from './engine/types';
 
@@ -134,6 +135,7 @@ export async function analyzeFlow(payload: any) {
   const projectKey = projectFrom(payload);
   const days = Number(payload?.lookbackDays) || 365;
   if (isDemo(projectKey, payload?.demoMode)) return compact(demoReport(await moneyFor(DEMO_KEY)));
+  if (!(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report, job } = await getReport(projectKey!, days);
   if (report && Date.now() - Date.parse(report.generatedAt) < FRESH_MS) return compact(report);
   const j = job?.status === 'running' ? job : await startJob(projectKey!, days);
@@ -144,6 +146,7 @@ export async function getAnalysisStatus(payload: any) {
   const projectKey = projectFrom(payload);
   const days = Number(payload?.lookbackDays) || 365;
   if (isDemo(projectKey, payload?.demoMode)) return compact(demoReport(await moneyFor(DEMO_KEY)));
+  if (!(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report, job } = await getReport(projectKey!, days);
   if (job?.status === 'running') return { status: 'running', projectKey, message: 'Still reading Jira history. Try again in a minute.' };
   if (job?.status === 'failed') return { status: 'failed', projectKey, error: job.error };
@@ -168,6 +171,7 @@ function scenarioFrom(payload: any): Scenario {
 export async function simulateWhatIf(payload: any) {
   const projectKey = projectFrom(payload);
   const days = Number(payload?.lookbackDays) || 365;
+  if (!isDemo(projectKey, payload?.demoMode) && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report } = await getReport(projectKey ?? DEMO_KEY, days, payload?.demoMode);
   if (!report) return { status: 'not-ready', message: 'Run analyze-flow first.' };
   const s = scenarioFrom(payload);
@@ -191,6 +195,7 @@ export async function simulateWhatIf(payload: any) {
 export async function recommendActions(payload: any) {
   const projectKey = projectFrom(payload);
   const days = Number(payload?.lookbackDays) || 365;
+  if (!isDemo(projectKey, payload?.demoMode) && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report } = await getReport(projectKey ?? DEMO_KEY, days, payload?.demoMode);
   if (!report) return { status: 'not-ready', message: 'Run analyze-flow first.' };
   const c = compact(report);
@@ -199,6 +204,7 @@ export async function recommendActions(payload: any) {
 
 export async function setAssumptions(payload: any) {
   const projectKey = projectFrom(payload) ?? DEMO_KEY;
+  if (projectKey !== DEMO_KEY && !(await userCan(projectKey, 'ADMINISTER_PROJECTS'))) return DENIED_ADMIN;
   const cur = await moneyFor(projectKey);
   const next: MoneyAssumptions = {
     ...cur,
@@ -218,6 +224,7 @@ resolver.define('getReport', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key ?? DEMO_KEY).toString().toUpperCase();
   const days = Number(payload?.days) || 365;
   const demo = payload?.demo === true || projectKey === DEMO_KEY;
+  if (!demo && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return { projectKey, days, demo, forbidden: true, report: null, job: null, setupDone: true, graph: null, graphConnected: false, stuck: [] };
   const { report, job } = await getReport(projectKey, days, demo);
   const setup = demo ? null : await setupFor(projectKey);
   const graphStatus = await lastPublished(demo ? DEMO_KEY : projectKey).catch(() => null);
@@ -229,6 +236,7 @@ resolver.define('getReport', async ({ payload, context }) => {
 resolver.define('shareNow', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key ?? DEMO_KEY).toString().toUpperCase();
   const demo = payload?.demo === true || projectKey === DEMO_KEY;
+  if (!demo && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return { error: DENIED.message };
   const { report } = await getReport(projectKey, 365, demo);
   if (!report) return { error: 'No report yet' };
   return publishReport(report, demo ? [] : ((await kvs.get<string[]>(stuckKey(projectKey))) ?? []));
@@ -236,15 +244,18 @@ resolver.define('shareNow', async ({ payload, context }) => {
 resolver.define('startAnalysis', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key)?.toString().toUpperCase();
   if (!projectKey) return { error: 'No project' };
+  if (!(await userCan(projectKey, 'BROWSE_PROJECTS'))) return { error: DENIED.message };
   return { job: await startJob(projectKey, Number(payload?.days) || 365) };
 });
 resolver.define('simulate', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key ?? DEMO_KEY).toString().toUpperCase();
   return simulateWhatIf({ ...payload, projectKey });
 });
-resolver.define('setAssumptions', async ({ payload }) => setAssumptions(payload));
+resolver.define('setAssumptions', async ({ payload, context }) =>
+  setAssumptions({ ...payload, projectKey: (payload?.projectKey ?? (context as any)?.extension?.project?.key ?? DEMO_KEY).toString().toUpperCase() }));
 resolver.define('getSetup', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key ?? DEMO_KEY).toString().toUpperCase();
+  if (projectKey !== DEMO_KEY && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return { error: DENIED.message };
   const setup = await setupFor(projectKey);
   let statuses: { name: string; category: string }[] = [];
   if (projectKey === DEMO_KEY) statuses = DEMO_FLOW.statuses.map((x) => ({ name: x.status, category: x.kind === 'done' ? 'done' : 'indeterminate' }));
@@ -258,6 +269,7 @@ resolver.define('getSetup', async ({ payload, context }) => {
 resolver.define('saveSetup', async ({ payload, context }) => {
   const projectKey = (payload?.projectKey ?? (context as any)?.extension?.project?.key)?.toString().toUpperCase();
   if (!projectKey || projectKey === DEMO_KEY) return { error: 'No project' };
+  if (!(await userCan(projectKey, 'ADMINISTER_PROJECTS'))) return { error: DENIED_ADMIN.message };
   const kinds: Record<string, StatusKind> = {};
   for (const [k, v] of Object.entries(payload?.kinds ?? {})) if (v === 'queue' || v === 'active' || v === 'done') kinds[k] = v;
   await kvs.set(setupKey(projectKey), { done: true, kinds, preset: payload?.preset, updatedAt: new Date().toISOString() } satisfies Setup);

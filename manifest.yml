@@ -186,7 +186,7 @@ modules:
             - key: reports
               type: header
               title: Which projects
-              description: Jira project keys to analyse, separated by commas (for example ENG, OPS). Reports contain aggregate figures only; people are pseudonymised.
+              description: Jira project keys to analyse, separated by commas (for example ENG, OPS). Reports contain aggregate figures and the keys of waiting work items, are visible to everyone in the workspace, and never name people.
               properties:
                 - key: projects
                   label: Project keys
