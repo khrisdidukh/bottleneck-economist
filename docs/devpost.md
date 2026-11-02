@@ -8,6 +8,9 @@ Find where your team's work really waits in Jira, and what fixing it is worth. I
 **Category:** Apps for Business Teams
 **Bonus prizes:** Best Agents (Rovo), Best app with Atlassian MCP, Best apps with Teamwork Graph integration
 
+**Video:** https://youtu.be/D-VOqL6TgGc
+**Code:** https://github.com/khrisdidukh/bottleneck-economist
+
 **Built with:** forge, jira, rovo, rovo-agent, rovo-actions, atlassian-mcp, teamwork-graph, forge-ui-kit, forge-kvs, forge-async-events, typescript, react, theory-of-constraints, throughput-accounting
 
 ---

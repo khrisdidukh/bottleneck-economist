@@ -13,6 +13,8 @@ On one year of real, public Apache Cassandra Jira history, the app finds that de
 
 Built for **Codegeist 2026**, category *Apps for Business Teams*.
 
+Demo video: https://youtu.be/D-VOqL6TgGc
+
 ## What's in the app
 
 | Forge module | What it does |
