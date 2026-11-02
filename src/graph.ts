@@ -122,13 +122,14 @@ export async function handleConnectionChange(request: any, sync: Sync) {
   }
   const prev = list.find((x) => x.connectionId === connectionId);
   if (action === 'CREATED') await pruneInvalid(list.filter((x) => x.connectionId !== connectionId));
+  const current = await connections();
   const conn: Connection = {
     connectionId,
     projects: parseProjects(configProperties?.projects),
     includeDemo: truthy(configProperties?.includeDemo),
     taskId: prev?.taskId ?? randomUUID(),
   };
-  await saveConnections([...list.filter((x) => x.connectionId !== connectionId), conn]);
+  await saveConnections([...current.filter((x) => x.connectionId !== connectionId), conn]);
   try { await sync(conn, 'quick'); } catch (e) { console.error('[graph] initial publish failed', e); }
   const sched: any = await graph.scheduleOrUpdateTask({
     connectionId,
