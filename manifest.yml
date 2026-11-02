@@ -3,7 +3,7 @@ modules:
     - key: bottleneck-economist
       name: Bottleneck Economist
       description: Finds where work really waits in a Jira project and what fixing it is worth in money.
-      icon: resource:assets;icons/agent.svg
+      icon: resource:assets;icons/icon-256.png
       prompt: resource:agent-prompt;prompt.txt
       conversationStarters:
         - Where is our bottleneck and what should we do?
@@ -167,8 +167,8 @@ modules:
     - key: bottleneck-reports
       name: Bottleneck Economist reports
       icons:
-        light: resource:assets;icons/agent.svg
-        dark: resource:assets;icons/agent.svg
+        light: https://raw.githubusercontent.com/khrisdidukh/bottleneck-economist/main/static/icons/icon-256.png
+        dark: https://raw.githubusercontent.com/khrisdidukh/bottleneck-economist/main/static/icons/icon-256.png
       objectTypes:
         - atlassian:document
       capabilities:

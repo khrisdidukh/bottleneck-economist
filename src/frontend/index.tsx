@@ -355,7 +355,7 @@ function ReportView({ state, reload }: { state: Any; reload: (demo?: boolean) =>
             <Lozenge appearance={state.graph?.accepted ? 'success' : state.graphConnected ? 'inprogress' : 'default'}>{state.graph?.accepted ? 'in Teamwork Graph' : state.graphConnected ? 'connected' : 'not connected'}</Lozenge>
           </Inline>
           {state.graph?.accepted ? (
-            <Text>{`This report is in the Teamwork Graph since ${new Date(state.graph.at).toLocaleString()}${state.stuck?.length ? `, linked to the ${state.stuck.length} work items waiting in “${c?.status}” now` : ''}. Rovo Search and Rovo Chat find it next to those items; it refreshes every day.`}</Text>
+            <Text>{`This report is in the Teamwork Graph since ${new Date(state.graph.at).toLocaleString()}${state.stuck?.length ? `, linked to the ${state.stuck.length} work items waiting in “${c?.status}” now` : ''}. Anyone on the team finds it in Rovo Search; it refreshes every day.`}</Text>
           ) : state.graphConnected ? (
             <Text>{state.graph?.lastError ? `The connector is set up, but the last publish failed: ${state.graph.lastError}` : 'The connector is set up. This report is published with the next daily sync, or now with Publish now.'}</Text>
           ) : (
