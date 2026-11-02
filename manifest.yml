@@ -1,0 +1,269 @@
+modules:
+  rovo:agent:
+    - key: bottleneck-economist
+      name: Bottleneck Economist
+      description: Finds where work really waits in a Jira project and what fixing it is worth in money.
+      icon: resource:assets;icons/agent.svg
+      prompt: resource:agent-prompt;prompt.txt
+      conversationStarters:
+        - Where is our bottleneck and what should we do?
+        - What if we automate code review?
+        - Is hiring another developer worth it?
+        - Show me the Apache Cassandra demo
+      followUpPrompt: Suggest up to three short follow-up questions about the constraint, a what-if scenario, or the money assumptions.
+      actions:
+        - analyze-flow
+        - get-analysis-status
+        - simulate-what-if
+        - recommend-actions
+        - set-assumptions
+
+  rovo:mcp:
+    - key: bottleneck-mcp
+      name: Bottleneck Economist
+      tools:
+        - analyze-flow
+        - get-analysis-status
+        - simulate-what-if
+        - recommend-actions
+
+  action:
+    - key: analyze-flow
+      name: Analyze project flow
+      function: analyzeFlowFn
+      actionVerb: GET
+      description: >
+        Reads a Jira project's status history: where delivered work spent its lead time, the constraint
+        (policy or capacity), an Adizes root-cause lens and priced options. Project DEMO = public Apache Cassandra data.
+      inputs:
+        projectKey:
+          title: Project key
+          type: string
+          required: false
+          description: Jira project key, for example ENG. Use DEMO for the demo dataset. Defaults to the current project.
+        lookbackDays:
+          title: Lookback days
+          type: integer
+          required: false
+          description: How many days of history to analyze. Default 365.
+        demoMode:
+          title: Demo mode
+          type: boolean
+          required: false
+          description: true to analyze the bundled Apache Cassandra demo data.
+    - key: get-analysis-status
+      name: Get analysis status
+      function: statusFn
+      actionVerb: GET
+      description: Returns the finished analysis for a project, or its progress if analyze-flow is still reading Jira.
+      inputs:
+        projectKey:
+          title: Project key
+          type: string
+          required: false
+          description: Jira project key, or DEMO.
+        lookbackDays:
+          title: Lookback days
+          type: integer
+          required: false
+          description: Same value used for analyze-flow. Default 365.
+    - key: simulate-what-if
+      name: Simulate what-if
+      function: simulateFn
+      actionVerb: GET
+      description: >
+        Simulates a change at one stage and prices it: delivered items per week, average lead time,
+        real value per year and value on paper only. Levers: automate, policy, hire, move, free.
+      inputs:
+        projectKey:
+          title: Project key
+          type: string
+          required: false
+          description: Jira project key, or DEMO.
+        status:
+          title: Stage
+          type: string
+          required: true
+          description: Exact Jira status name of the stage to change, as returned by analyze-flow.
+        lever:
+          title: Lever
+          type: string
+          required: true
+          description: One of automate, policy, hire, move, free.
+        automationPct:
+          title: Share automated
+          type: number
+          required: false
+          description: For lever automate, share of the stage's work automated, 0 to 1. Default 0.5.
+        queueCutPct:
+          title: Share of waiting removed
+          type: number
+          required: false
+          description: For lever policy, share of the waiting removed by a decision rule or WIP limit, 0 to 1.
+        addPeople:
+          title: People added
+          type: integer
+          required: false
+          description: For hire or move. Default 1.
+        removePeople:
+          title: People freed
+          type: integer
+          required: false
+          description: For free. Default 1.
+        hourlyCost:
+          title: Hourly cost
+          type: number
+          required: false
+          description: Optional loaded cost per person-hour for this simulation.
+        valuePerItem:
+          title: Value per item
+          type: number
+          required: false
+          description: Optional value of one delivered item for this simulation.
+    - key: recommend-actions
+      name: Recommend actions
+      function: recommendFn
+      actionVerb: GET
+      description: Returns the ranked options around the constraint with real and paper value per year.
+      inputs:
+        projectKey:
+          title: Project key
+          type: string
+          required: false
+          description: Jira project key, or DEMO.
+    - key: set-assumptions
+      name: Set money assumptions
+      function: assumptionsFn
+      actionVerb: UPDATE
+      description: Saves the team's money assumptions used to price options.
+      inputs:
+        projectKey:
+          title: Project key
+          type: string
+          required: false
+          description: Jira project key, or DEMO.
+        hourlyCost:
+          title: Hourly cost
+          type: number
+          required: false
+          description: Loaded cost per person-hour.
+        valuePerItem:
+          title: Value per item
+          type: number
+          required: false
+          description: Value of one delivered item.
+        costOfDelayPerItemWeek:
+          title: Cost of delay per item per week
+          type: number
+          required: false
+          description: Value lost per item for each week it waits.
+        currency:
+          title: Currency
+          type: string
+          required: false
+          description: ISO code, for example EUR or USD.
+
+  graph:connector:
+    - key: bottleneck-reports
+      name: Bottleneck Economist reports
+      icons:
+        light: resource:assets;icons/agent.svg
+        dark: resource:assets;icons/agent.svg
+      objectTypes:
+        - atlassian:document
+      capabilities:
+        replicatesPermissions: false
+        syncFidelity: upsert
+        supportsIncrementalSync: false
+      orchestration:
+        taskRunner:
+          function: graphTaskRunnerFn
+      datasource:
+        formConfiguration:
+          instructions:
+            - Bottleneck Economist publishes one report per Jira project into the Teamwork Graph, linked to the work items waiting at the bottleneck, and refreshes it every day. Rovo Search and Rovo Chat can then cite it.
+          form:
+            - key: reports
+              type: header
+              title: Which projects
+              description: Jira project keys to analyse, separated by commas (for example ENG, OPS). Reports contain aggregate figures only; people are pseudonymised.
+              properties:
+                - key: projects
+                  label: Project keys
+                  type: string
+                  isRequired: false
+                - key: includeDemo
+                  label: Also publish the Apache Cassandra demo report (true or false)
+                  type: string
+                  isRequired: false
+          validateConnection:
+            function: graphValidateFn
+        onConnectionChange:
+          function: graphConnectionFn
+
+  jira:projectPage:
+    - key: economist-page
+      resource: main
+      resolver:
+        function: ui-resolver
+      render: native
+      title: Bottleneck Economist
+
+  scheduledTrigger:
+    - key: daily-graph-refresh
+      function: dailyGraphRefreshFn
+      interval: day
+
+  consumer:
+    - key: analysis-consumer
+      queue: flow-analysis
+      function: analysisWorkerFn
+
+  function:
+    - key: analyzeFlowFn
+      handler: index.analyzeFlow
+    - key: statusFn
+      handler: index.getAnalysisStatus
+    - key: simulateFn
+      handler: index.simulateWhatIf
+    - key: recommendFn
+      handler: index.recommendActions
+    - key: assumptionsFn
+      handler: index.setAssumptions
+    - key: ui-resolver
+      handler: index.uiResolver
+    - key: analysisWorkerFn
+      handler: index.analysisWorker
+      timeoutSeconds: 900
+    - key: graphConnectionFn
+      handler: index.onConnectionChange
+    - key: graphValidateFn
+      handler: index.validateGraphConnection
+    - key: graphTaskRunnerFn
+      handler: index.graphTaskRunner
+      timeoutSeconds: 900
+    - key: dailyGraphRefreshFn
+      handler: index.dailyGraphRefresh
+
+resources:
+  - key: main
+    path: src/frontend/index.tsx
+  - key: agent-prompt
+    path: resource/agent
+  - key: assets
+    path: static
+
+permissions:
+  scopes:
+    - read:jira-work
+    - storage:app
+    - read:object:jira
+    - write:object:jira
+    - delete:object:jira
+
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 1024
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/ed661deb-db16-421c-bf81-d289b6dda2bb
