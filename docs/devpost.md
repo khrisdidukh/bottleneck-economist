@@ -47,10 +47,10 @@ Open **Bottleneck Economist** in any Jira project (Apps in the project sidebar):
 
 ## Challenges we ran into
 
-- **"Waiting" isn't a Jira category.** "Patch Available" sits in Jira's *In Progress* category but means "waiting for a reviewer". We classify statuses by meaning and let teams correct the classification on a Workflow setup screen.
+- **"Waiting" isn't a Jira category.** A status name doesn't say whether anyone works on the item: "Patch Available" means "waiting for a reviewer". We classify statuses by meaning and let teams correct the classification on a Workflow setup screen.
 - **Bulk edits lie.** Teams that bulk-close old issues create fake flow. We detect status changes made in bulk (within two minutes of each other) and show a data-quality warning next to the result.
-- **Paper value is seductive.** The first versions of our own simulator happily reported "automation saves €175k". Throughput accounting forced us to show that freed hours become money only if they move to the constraint or the cost actually disappears.
-- **Teamwork Graph connections** are created by an admin in Atlassian Administration, and writes must follow the platform's orchestration model. We publish on connection and on a daily task, and show the publication status on the page.
+- **Paper value is seductive.** Freed hours look like savings in any spreadsheet. Throughput accounting made us show them separately: they become money only if people move to the constraint or the cost actually disappears.
+- **Teamwork Graph connections** are created by an admin in Atlassian Administration, and a connection stops accepting writes after a manifest change. We publish on connection and on a daily orchestration task, forget connections the platform reports as gone, and show the publication status (with a Publish now button) on the page.
 
 ## Accomplishments that we're proud of
 
@@ -59,6 +59,10 @@ On real public data, the app reaches a conclusion a team would argue about for w
 ## What we learned
 
 Most delivery problems that look like capacity problems are decision problems. The data to prove it is already in Jira; it only needs to be read as a flow and priced honestly.
+
+## Who built it
+
+The idea and product decisions are Khrystyna Didukh's; she built it for Codegeist 2026 together with Claude (Anthropic) as her coding partner.
 
 ## What's next
 
