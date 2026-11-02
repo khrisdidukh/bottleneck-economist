@@ -31,7 +31,7 @@ Open **Bottleneck Economist** in any Jira project (Apps in the project sidebar):
 4. **Why it happens.** The Adizes PAEI lens names the missing role from flow evidence. Here it is *Entrepreneur*: 34% of resolved items were closed without ever being worked on (late "no" decisions), and 2,921 items have been untouched for 180+ days.
 5. **What if…** A simulator prices any change at any stage (automate, change a decision rule, hire, move, free a person) and shows delivered items per week and lead time before and after. Money assumptions (cost per hour, value per delivered item, cost of delay, currency) are editable per project.
 6. **Ask the Economist.** A **Rovo agent** answers "Where is our bottleneck?", "What if we automate code review?" or "Is hiring another developer worth it?" from the same tools and always quotes the tool's numbers, never its own.
-7. **Shared as context.** A **Teamwork Graph connector** publishes each project's report into the graph, **associated with the work items stuck at the bottleneck right now**. Rovo Search and Rovo Chat then surface "where our work waits and what it costs" next to the very issues that are waiting.
+7. **Shared as context.** A **Teamwork Graph connector** publishes each project's report into the graph, **associated with the work items stuck at the bottleneck right now**. Anyone on the team then finds "where our work waits and what it costs" in Rovo Search, linked to the very issues that are waiting.
 8. **Any agent, not only Rovo.** The same tools are exposed through the **Atlassian MCP server** (`rovo:mcp`), with an open-source `SKILL.md` so Claude, ChatGPT or Cursor know how to use them well.
 
 ## How we built it
@@ -76,7 +76,7 @@ A Forge app (Rovo agent, 5 actions, MCP server, Teamwork Graph connector, Jira p
 
 **Best app with Atlassian MCP.** `rovo:mcp` exposes `analyze-flow`, `get-analysis-status`, `recommend-actions` and `simulate-what-if` through the Atlassian MCP server. The open-source `SKILL.md` teaches third-party agents the workflow: analyse first, run a what-if before answering "should we automate/hire?", quote money from the tool, and say when a saving is on paper only.
 
-**Best apps with Teamwork Graph integration.** The connector writes one `atlassian:document` per project into the graph, associated with the Jira work items currently waiting at the bottleneck. A question in Rovo Chat about one of those items, or a search for "bottleneck", now brings back the reason the item waits and what fixing it is worth: context, not another dashboard.
+**Best apps with Teamwork Graph integration.** The connector writes one `atlassian:document` per project into the graph, associated with the Jira work items currently waiting at the bottleneck. A Rovo Search for "bottleneck" or the project now brings back the reason those items wait and what fixing it is worth: context, not another dashboard. The connector publishes on connection and refreshes daily through the platform's orchestration task.
 
 ## Testing instructions
 

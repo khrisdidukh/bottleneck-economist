@@ -21,7 +21,7 @@ Built for **Codegeist 2026**, category *Apps for Business Teams*.
 | `rovo:agent` **Bottleneck Economist** | Ask in Rovo Chat: "Where is our bottleneck?", "What if we automate code review?", "Is hiring another developer worth it?" |
 | `action` ×5 | `analyze-flow`, `get-analysis-status`, `simulate-what-if`, `recommend-actions`, `set-assumptions`: reusable by any Rovo agent. |
 | `rovo:mcp` | The same tools through the **Atlassian MCP server**, for Claude, ChatGPT, Cursor or any MCP client. An open-source [`skills/bottleneck-economist/SKILL.md`](skills/bottleneck-economist/SKILL.md) tells third-party agents how to use them well. |
-| `graph:connector` (**Teamwork Graph**) | Publishes each project's report into the Teamwork Graph as a document, **associated with the work items that are stuck at the bottleneck right now**, and refreshes it daily. Rovo Search and Rovo Chat then find "where our work waits and what it costs" next to the stuck issues themselves. |
+| `graph:connector` (**Teamwork Graph**) | Publishes each project's report into the Teamwork Graph as a document, **associated with the work items that are stuck at the bottleneck right now**, and refreshes it daily. Anyone on the team then finds "where our work waits and what it costs" in Rovo Search, linked to the stuck issues themselves. |
 | `consumer` (async queue) | Reads large projects (thousands of issues and their changelogs) in the background, within Forge limits. |
 
 Everything runs on Atlassian (Forge functions, Forge KVS storage). No data leaves Atlassian; there is no external egress.
@@ -38,7 +38,7 @@ Everything runs on Atlassian (Forge functions, Forge KVS storage). No data leave
    1. Atlassian Administration → **Apps** → *your site* → **Connected apps** → Bottleneck Economist → **View app details** → **Connections**.
    2. Under *Teamwork Graph connectors*, press **Connect** next to *Bottleneck Economist reports*.
    3. Name: anything. Project keys: one or more Jira keys, comma-separated (for example `ENG, OPS`). Demo report: `true`.
-   4. Press **Install**. Within a minute, search for "Bottleneck report" in Atlassian search or ask Rovo Chat "where does our work wait?". The project page shows the publication status under **Shared as context**; **Publish now** pushes the current report immediately.
+   4. Press **Install**. Within a minute, search for "Bottleneck report" in Rovo Search (Search all apps → Bottleneck Economist reports). The project page shows the publication status under **Shared as context**; **Publish now** pushes the current report immediately.
 6. **MCP:** connect an MCP client to the Atlassian MCP server for your site; the tools above appear as `analyze-flow`, `simulate-what-if` and so on. Add [`SKILL.md`](skills/bottleneck-economist/SKILL.md) to your agent for best answers.
 
 ## How it works
