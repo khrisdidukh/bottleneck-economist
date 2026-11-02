@@ -70,7 +70,7 @@ forge install         # choose Jira and your site
 ## Honest limits
 
 - Money figures depend on the assumptions (default €60/hour, €2,000 per delivered item, €150 cost of delay per item per week), and every screen and answer shows them. Teams should set their own.
-- The constraint is found from status history. Teams that don't move issues through statuses, or bulk-close them, get a data-quality warning instead of a confident answer.
+- The constraint is found from status history. Teams that don't move issues through statuses get a "not enough delivery history" screen; status changes made in bulk produce a data-quality warning next to the result.
 - The Teamwork Graph report is visible to everyone in the workspace (aggregate figures only). It does not replicate Jira project permissions.
 
 ## License
