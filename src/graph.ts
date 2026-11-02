@@ -78,23 +78,28 @@ export async function publishReport(r: Report, stuck: string[]) {
   const doc = documentFor(r, stuck, url || 'https://developer.atlassian.com');
   let accepted = 0;
   const errors: string[] = [];
+  const errorsFor: (string | undefined)[] = [];
   for (const t of targets) {
     const res: any = await graph.setObjects({ connectionId: t.connectionId, objects: [doc as any] });
     const rejected = res?.results?.rejected ?? [];
     const n = res?.results?.accepted?.length ?? 0;
     accepted += n;
+    errorsFor.push(res?.success ? undefined : String(res?.error ?? ''));
     if (!res?.success || rejected.length) {
       errors.push(String(res?.error ?? JSON.stringify(rejected).slice(0, 300)));
       console.error('[graph] setObjects failed', { project: r.project, connectionId: t.connectionId, rejected, error: res?.error });
     } else console.log('[graph] published', { project: r.project, connectionId: t.connectionId, accepted: n });
   }
+  const dead = targets.filter((t, i) => DEAD.test(errorsFor[i] ?? ''));
+  if (dead.length) await saveConnections((await connections()).filter((x) => !dead.some((d) => d.connectionId === x.connectionId)));
+  const live = targets.length - dead.length;
   const key = r.source === 'demo' ? 'DEMO' : r.project;
   const prev = await lastPublished(key);
   const status = accepted
-    ? { at: new Date().toISOString(), accepted, connections: targets.length }
-    : { ...(prev ?? { at: '', accepted: 0, connections: targets.length }), lastError: errors[0]?.slice(0, 200) };
+    ? { at: new Date().toISOString(), accepted, connections: live }
+    : { ...(prev ?? { at: '', accepted: 0, connections: live }), lastError: errors[0]?.slice(0, 200) };
   await kvs.set(pubKey(key), status);
-  return { published: accepted, connections: targets.length, errors };
+  return { published: accepted, connections: live, errors: accepted ? [] : errors };
 }
 
 const pubKey = (p: string) => `tg:published:${p.replace(/[^A-Za-z0-9_-]/g, '_').slice(0, 80)}`;
@@ -141,12 +146,13 @@ export async function handleConnectionChange(request: any, sync: Sync) {
   return { success: true };
 }
 
+const DEAD = /invalid connection|connection not found/i;
 /** Forget connections the platform no longer accepts (for example removed while the app was offline). */
 async function pruneInvalid(others: Connection[]) {
   const invalid: string[] = [];
   for (const c of others) {
     const res: any = await graph.getObjectByExternalId({ connectionId: c.connectionId, objectType: 'atlassian:document', externalId: 'probe' } as any).catch((e: any) => ({ error: String(e) }));
-    if (/invalid connection/i.test(String(res?.error ?? ''))) invalid.push(c.connectionId);
+    if (DEAD.test(String(res?.error ?? ''))) invalid.push(c.connectionId);
   }
   if (invalid.length) {
     console.log('[graph] pruning invalid connections', invalid);
