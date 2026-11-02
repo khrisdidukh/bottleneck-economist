@@ -2,7 +2,7 @@
 
 _Last updated: 2 November 2026_
 
-Bottleneck Economist is a Forge app for Jira Cloud by Khrystyna Didukh (Vienna, Austria).
+Bottleneck Economist is a Forge app for Jira Cloud by Khrystyna Didukh (Vienna, Austria). The Atlassian Marketplace listing is published by Lumos Strategies OÜ (Estonia).
 
 **What the app reads.** Work items of the Jira projects you analyse (keys, status changes with timestamps, resolution, issue type) through the Jira REST API, with the permissions you grant on installation.
 
