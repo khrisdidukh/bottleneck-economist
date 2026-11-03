@@ -1,0 +1,5739 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:abb3686e-5526-43b9-966f-41a8b76532ca",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-11-03T09:25:07Z",
+  "component": {
+   "type": "application",
+   "name": "bottleneck-economist",
+   "version": "0.1.0"
+  },
+  "supplier": {
+   "name": "Lumos Strategies O\u00dc"
+  }
+ },
+ "components": [
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/adf-schema-generator@4.0.4",
+   "name": "@atlaskit/adf-schema-generator",
+   "version": "4.0.4",
+   "purl": "pkg:npm/%40atlaskit/adf-schema-generator@4.0.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-uFVUN81FHtcRl6zZUf7FhaFhSsAvPpeHo4nQlCXznJEqtTN/KAYJ+9nH1eMSUDoy///LyQBct1lrw/Iyvu/SnA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/adf-schema@56.7.3",
+   "name": "@atlaskit/adf-schema",
+   "version": "56.7.3",
+   "purl": "pkg:npm/%40atlaskit/adf-schema@56.7.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-2G82HHnQT/uSnk1cydfHrT/+S6ds+Oz7pkYKUBjdJjdhUFzNDeBR9MdpxusOQSDI0vrvtmkyR2IcY5xmv8p5dA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/adf-schema@57.7.26",
+   "name": "@atlaskit/adf-schema",
+   "version": "57.7.26",
+   "purl": "pkg:npm/%40atlaskit/adf-schema@57.7.26",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/dm2ozdo61a8++jiM6DdmluMkCK/RJXB6RFG5miOBCmgE9TLuffp3CrD0IdwEJDURAeEGrGQwzBVQ5jf6ri82g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/adf-utils@20.9.82",
+   "name": "@atlaskit/adf-utils",
+   "version": "20.9.82",
+   "purl": "pkg:npm/%40atlaskit/adf-utils@20.9.82",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TX/KDuUwDzH0gnvgHj6Utcas3BjI+jelK+J82mWEjqHF0tb5hkT9mg6q9JjbFu5oaoYkFlVDkPgtydEV1eL7RA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/analytics-next-stable-react-context@1.0.1",
+   "name": "@atlaskit/analytics-next-stable-react-context",
+   "version": "1.0.1",
+   "purl": "pkg:npm/%40atlaskit/analytics-next-stable-react-context@1.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-iO6+hIp09dF4iAZQarVz3vKY1kM5Ij5CExYcK9jgc2q+OH8nv8n+BPFeJTdzGOGopmbUZn5Opj9pYQvge1Gr4Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/analytics-next@12.6.0",
+   "name": "@atlaskit/analytics-next",
+   "version": "12.6.0",
+   "purl": "pkg:npm/%40atlaskit/analytics-next@12.6.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-QFECDwLBbNx9IRsBQMiQlw6r/sx+DcVs9hkJxRgPe3yakTdPBZMzSqD0b4R2tsFNlNxSKSkeJCF92S20v7suqg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/app-provider@8.2.0",
+   "name": "@atlaskit/app-provider",
+   "version": "8.2.0",
+   "purl": "pkg:npm/%40atlaskit/app-provider@8.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-AXE3JCBVyrDPRmmriLKs3S7nNVY0ZS3tvQ11xDVsPwNY+sj2pJUze7/bozL3Fuz1cG04WJgrsl+Ww6P15/lm3Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/atlassian-context@1.2.0",
+   "name": "@atlaskit/atlassian-context",
+   "version": "1.2.0",
+   "purl": "pkg:npm/%40atlaskit/atlassian-context@1.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xM3V7efLG7LTeG/acX8k7N7QJ4929TMXg3Pv5eBAhIrE2o5YrE7wBfnkCDgNTWRu1KY7IJOGbz4xmF+AZ0z7fw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/atlassian-context@2.0.0",
+   "name": "@atlaskit/atlassian-context",
+   "version": "2.0.0",
+   "purl": "pkg:npm/%40atlaskit/atlassian-context@2.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-RfdonD91GCqMo6a4nZlg3ZkKrHV4OcEkxVe/4J0aPkLk4R0rRZfcckvQxv0hou3JziNibIv4ou9naK6bt/Y09g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/avatar@30.0.5",
+   "name": "@atlaskit/avatar",
+   "version": "30.0.5",
+   "purl": "pkg:npm/%40atlaskit/avatar@30.0.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-EO53A4ItJZBvgEHofcFgb4h6UNW7IRJ747FyHhnxkcRonCf67W8O+uyIw2cfWImlA39WKQNieLK5HLbBXjpa/w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/badge@22.0.0",
+   "name": "@atlaskit/badge",
+   "version": "22.0.0",
+   "purl": "pkg:npm/%40atlaskit/badge@22.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-KPIxx69KuKHAjWDT1ePVrAmUChpm8DfmEuPulPQR1qhzngoUswzbu+4nEmqGneKfrDMlNnMDYAuRkqYvYasd9w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/banner@15.3.4",
+   "name": "@atlaskit/banner",
+   "version": "15.3.4",
+   "purl": "pkg:npm/%40atlaskit/banner@15.3.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Z9w4L/qCtAcs3A3L3jW87zpBsd8nZSd1DEsWU7dZL6BKjev7E+WPjlXq/Q5VinWG/6pGJD/QAu+SvAjbsNtp4A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/blanket@16.4.4",
+   "name": "@atlaskit/blanket",
+   "version": "16.4.4",
+   "purl": "pkg:npm/%40atlaskit/blanket@16.4.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-SoU1lZfi+N+pTH/8Oym9FLu7t9uopJAAvAzf4P6w+5jlDuhJMPUS+vHUqKLM6b86lXdlZ1jtT5D1yEK/s8hF/A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/breadcrumbs@17.8.6",
+   "name": "@atlaskit/breadcrumbs",
+   "version": "17.8.6",
+   "purl": "pkg:npm/%40atlaskit/breadcrumbs@17.8.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-PlStCUf1ZJboXiPWVmBSw5hPQdkYXnACMJW/SXWROlV2xkVVlPEJjFSNXfFrJh8tGWx76lAc+dNjSnfat5XaqA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/browser-apis@1.2.0",
+   "name": "@atlaskit/browser-apis",
+   "version": "1.2.0",
+   "purl": "pkg:npm/%40atlaskit/browser-apis@1.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-SNwf6LGu1BjECz62iC/kIOwmtiJlz4cuf04OnVLlN8amEly+6NHIzZG+IU2Bbpa2vG7oVSj3nSy0gMm/7kqiuQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/button@25.6.1",
+   "name": "@atlaskit/button",
+   "version": "25.6.1",
+   "purl": "pkg:npm/%40atlaskit/button@25.6.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-943uiS+PbIo5X4ReBUuv5998ZPf1tuZP7kP2IQw+R4L2jFyB4AOe7SbtUYHCO7ByM8LS/VqKMwB4PFt2lpxqgg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/calendar@19.5.1",
+   "name": "@atlaskit/calendar",
+   "version": "19.5.1",
+   "purl": "pkg:npm/%40atlaskit/calendar@19.5.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Z2aGrYKOrY+9coBVk0U/4M9fwqzPEOgu/3/BL4xLImxK4B4snn2PfIcssJ6gchIK03mxBueEAcDlBFst6eKK0Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/comment@14.2.6",
+   "name": "@atlaskit/comment",
+   "version": "14.2.6",
+   "purl": "pkg:npm/%40atlaskit/comment@14.2.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Boi+0Rw22CwXkaKkXAQwxQKKT1sf0YdWs82WpOiXd3YmkKnsmfSJRgWFc50dku3s4Da9lta+UJBFMTTPLmQCXg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/css@1.1.7",
+   "name": "@atlaskit/css",
+   "version": "1.1.7",
+   "purl": "pkg:npm/%40atlaskit/css@1.1.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-7YPPhuwE7d78yl68zJlnU04lg91IQFZn+y0nmZH0YTg75K8TwOSi6Eq/qZPBBs3KstJo2bpXg4nU/SWakkS/hg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/datetime-picker@19.4.2",
+   "name": "@atlaskit/datetime-picker",
+   "version": "19.4.2",
+   "purl": "pkg:npm/%40atlaskit/datetime-picker@19.4.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-IDNcDMRRr7yWfdzkuO6cFeokLwzDvVsPPPVY9VUtRiQZFQ6hZ41caqnepaudYsQodPz3K1TH1+lS1EbzDotVow=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/dropdown-menu@21.0.5",
+   "name": "@atlaskit/dropdown-menu",
+   "version": "21.0.5",
+   "purl": "pkg:npm/%40atlaskit/dropdown-menu@21.0.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+ActcJP76oiiNroiDUejx6WhS/M6WbZ0AbP61DNBXz0TRXQsUiC4f//MBoIejoufT9GxxtE2qjRgg1idHHH62A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/ds-lib@2.7.0",
+   "name": "@atlaskit/ds-lib",
+   "version": "2.7.0",
+   "purl": "pkg:npm/%40atlaskit/ds-lib@2.7.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+U4aPE2dBRFUBYWCM9vkrwJGrLAYVcK30ZpEiQDNpM2D7K41223TfEijC8azaN4VM3tsCgwSKBWwniloNxqYbA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/ds-lib@8.0.1",
+   "name": "@atlaskit/ds-lib",
+   "version": "8.0.1",
+   "purl": "pkg:npm/%40atlaskit/ds-lib@8.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-kvuOp8D4CMMd82zK/BJztOKl18UZeZwpdWds5Mhy1FFhvHiMqFU0vzIcE4J5vL2Fz4UYPjkOce4bAFvBsYV8WQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/dynamic-table@19.3.8",
+   "name": "@atlaskit/dynamic-table",
+   "version": "19.3.8",
+   "purl": "pkg:npm/%40atlaskit/dynamic-table@19.3.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-C4fsN94Oz78/WH03PitrFx4jNiBxhMMSSLhg4H8Ak8/DCjdpzglovPnwaRTXUp26FJrUlMVFCFnShO5bFKZYJg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/editor-prosemirror@8.0.3",
+   "name": "@atlaskit/editor-prosemirror",
+   "version": "8.0.3",
+   "purl": "pkg:npm/%40atlaskit/editor-prosemirror@8.0.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-VU2N4/VhwhXj50wm6CtgVrHyOx6TPtNIHRSL9FpiEu/Rt4TVOgJjr1ul6SmTYclccmNWviFUsa2LR7evKaLZgw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/editor-prosemirror@9.0.0",
+   "name": "@atlaskit/editor-prosemirror",
+   "version": "9.0.0",
+   "purl": "pkg:npm/%40atlaskit/editor-prosemirror@9.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-nwSgKruXf5XqlqCkv4ACmfM/w4ivep9VtnZCSp8xPMCPvZKMqJKytWSuJ8gxB8yedz2ohMTyTd+VsDE4kPC9Mw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/feature-gate-js-client@6.0.2",
+   "name": "@atlaskit/feature-gate-js-client",
+   "version": "6.0.2",
+   "purl": "pkg:npm/%40atlaskit/feature-gate-js-client@6.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-x4TKOAhM9Ejb6e2CA3OrIMv+T6+FdPSgEPH+yzB+k/A5OOHBaoKLzcG9Fs1mBGp/fISiD966xmdPdYb1RcMPDw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/feature-gate-js-client@7.1.0",
+   "name": "@atlaskit/feature-gate-js-client",
+   "version": "7.1.0",
+   "purl": "pkg:npm/%40atlaskit/feature-gate-js-client@7.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-R+YNLQ3oguFTYyVImchnWbVhMVFAjvc4YGPvMBA3C2rRHTF8vItIdXsx1arYqz6qx9XIhzwexGT308qgabYToA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/flag-client@1.0.1",
+   "name": "@atlaskit/flag-client",
+   "version": "1.0.1",
+   "purl": "pkg:npm/%40atlaskit/flag-client@1.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Flpuis9RKVSXKd9AhOSinOzBovmgdwHRF0CPGoDUmizYLp1E6Umpr0sVRNRmnl+3rF1fiHxgx5YlVzeapb283A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/focus-ring@6.0.0",
+   "name": "@atlaskit/focus-ring",
+   "version": "6.0.0",
+   "purl": "pkg:npm/%40atlaskit/focus-ring@6.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-a+wvgoeB7bD4Oju+wAJmEZfE31ZLZOAhR8acWWO4Kg/y7iJGloEPrdu9tAWq5a8bh/kLsN2IVLh5fEWmz+jTTw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/forge-react-types@2.13.0",
+   "name": "@atlaskit/forge-react-types",
+   "version": "2.13.0",
+   "purl": "pkg:npm/%40atlaskit/forge-react-types@2.13.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Xq6qzXtDryjgz6kmMtsTNU5vVf+O7ukHIs4u9Y5iZTxc34FXJa9RYz1njjuuklRswp/ep4Arw4cI+dCeNaj8Kg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/form@18.3.1",
+   "name": "@atlaskit/form",
+   "version": "18.3.1",
+   "purl": "pkg:npm/%40atlaskit/form@18.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-fRzpeYUELvLUIwYZeY0wkaIan0Zd1qYa397UGoW/6GmDmZP+Dz6COP796ylnFMYLCN064zMXm7v+AyGk0BP44w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/heading@8.0.0",
+   "name": "@atlaskit/heading",
+   "version": "8.0.0",
+   "purl": "pkg:npm/%40atlaskit/heading@8.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-JqgX5SVJmET1m8YYRvhdr3s+QcxqUW1oRqPb7GWZ3VMcVprEyup5fWSOL8STLPjw2WgLmnMvGdNsJyOOWadlpQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/icon-lab@7.11.0",
+   "name": "@atlaskit/icon-lab",
+   "version": "7.11.0",
+   "purl": "pkg:npm/%40atlaskit/icon-lab@7.11.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LU+233TJGANbDd7IsDGaxtMXUoQHgHO07w9t5/x9c9ADPUMBTt6ojf/26M5Ii9QN9xikZvMM2GlMKxbECLAAUg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/icon@38.0.2",
+   "name": "@atlaskit/icon",
+   "version": "38.0.2",
+   "purl": "pkg:npm/%40atlaskit/icon@38.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-64u+15wjJEVtEz4tGp1v7RZruFa7JPvBTCMHGFGo3CwgajUTP6XY9MVeCqo1t3E1GPtKuV7PCUaCxS7LGkIScg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/inline-dialog@20.3.8",
+   "name": "@atlaskit/inline-dialog",
+   "version": "20.3.8",
+   "purl": "pkg:npm/%40atlaskit/inline-dialog@20.3.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UoWNj7i4sy0mFryLoj3KIEyLhRd2/agPCG/UkHRoVaiAecwQIL3m+S1BBf0P983RFjE2ngH0i1QhvVYB4eSi5Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/inline-edit@16.4.6",
+   "name": "@atlaskit/inline-edit",
+   "version": "16.4.6",
+   "purl": "pkg:npm/%40atlaskit/inline-edit@16.4.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pdhaUc9nIqgEHKiAxMIj9jF3UXxHOdwXVcKYBVIKvKRxAOdp1ihKNjPrs57vb2DEA0QUSp/Vu+vq8y0h8u2wTw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/interaction-context@4.1.0",
+   "name": "@atlaskit/interaction-context",
+   "version": "4.1.0",
+   "purl": "pkg:npm/%40atlaskit/interaction-context@4.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dgi1J2MqewK4h9asP8CcVJoqIuZPDPUVAQVDtRoLWy0/o7FAywMhzJI1sh7wOVtO8QkQ2Cm11hSROtWbk/ufBA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/layering@6.1.0",
+   "name": "@atlaskit/layering",
+   "version": "6.1.0",
+   "purl": "pkg:npm/%40atlaskit/layering@6.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-OpVcPXsS4OBYGuJDSuubi1qtOp3aSKi3FK/++/Z49KVFtcRdn0UrTrkz3e+dpI+0FtaI8IV4f6O2ceqCa1T81w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/link@5.1.7",
+   "name": "@atlaskit/link",
+   "version": "5.1.7",
+   "purl": "pkg:npm/%40atlaskit/link@5.1.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-IwR3QanwSVT8TUyA0AKaNYJfFMz+Cnr5M3uEkMrDAP0E7xXkzvZ4RS40hg48m/JkBPmRnPceGe2uENE+guRUwg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/locale@5.5.0",
+   "name": "@atlaskit/locale",
+   "version": "5.5.0",
+   "purl": "pkg:npm/%40atlaskit/locale@5.5.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-CIC/TdVa1gf38KVE//pTe7WKXIw3eeC3eEYrJD2oKJFbTjw7P9pCf8AJHtY59815qaZfVSjcWtu9wMJQjZ6LpA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/logo@23.3.1",
+   "name": "@atlaskit/logo",
+   "version": "23.3.1",
+   "purl": "pkg:npm/%40atlaskit/logo@23.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-wncsBzNBKdw4IDwu4eS7ouOlyn3qUenKAny+NHNbz3hJYlrIgacea384F/Z9r9iuNwSbHzSYWuktiwhl9vyQwA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/lozenge@17.0.6",
+   "name": "@atlaskit/lozenge",
+   "version": "17.0.6",
+   "purl": "pkg:npm/%40atlaskit/lozenge@17.0.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+qdL3FGT4CrTeWRjJi0lspPUru5xQmi2zwBoFzU1NJqxNsF9hpgPkm0aEZKuqF7i0MD2LUztoFE7ZDgPfLYU5A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/menu@11.0.4",
+   "name": "@atlaskit/menu",
+   "version": "11.0.4",
+   "purl": "pkg:npm/%40atlaskit/menu@11.0.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/p3qIqzf4aqezTgINTiQVj8H6vTMtxqr24qDhucwE+Hw4+E0skh2FEPsD56qFGPREuyzOZHpl7DoEoPXjQMz0A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/modal-dialog@17.1.2",
+   "name": "@atlaskit/modal-dialog",
+   "version": "17.1.2",
+   "purl": "pkg:npm/%40atlaskit/modal-dialog@17.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-a/rHQPB0FoLvo31ymQHzTeL0QaZaJ1YsAhw0MzOVVXcEr9fdxViKFPq5dFFy6+BYPsewU5w5reFi6iM6v8LYUw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/motion@9.5.0",
+   "name": "@atlaskit/motion",
+   "version": "9.5.0",
+   "purl": "pkg:npm/%40atlaskit/motion@9.5.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-asByKvtxPP7tVaOV/xaTFMfbqOfJYClFj7xvkcpmIWzLRb0WUyLgnQV55J/vx219qOoQwbZ+BDfqOt8TKkFwjw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/navigation-system@11.4.2",
+   "name": "@atlaskit/navigation-system",
+   "version": "11.4.2",
+   "purl": "pkg:npm/%40atlaskit/navigation-system@11.4.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-1qr53+HNQ5W2s7AIagwsEAGGCrzlcVWAvjeaZp+NG/ItEycQKsdRSXpoYvjuHTze+O4910Kf4GtgWmxnG5Lnig=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/object@2.3.5",
+   "name": "@atlaskit/object",
+   "version": "2.3.5",
+   "purl": "pkg:npm/%40atlaskit/object@2.3.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LxtBvNbnAuNmgU8ALh6MpBs3nYxGwE8BBAcfMDufVexrxy2q1fPlYjrTLpCgpskAJYtGRKj21R/v6LxK39/9fw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pagination@17.3.4",
+   "name": "@atlaskit/pagination",
+   "version": "17.3.4",
+   "purl": "pkg:npm/%40atlaskit/pagination@17.3.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-esfIBaKHHZwRcTvtdN/G3vvDtoK5xKD/s0BXc7wg02cpaR8tKj/Cjz+e0XhPApcHxw3wa/hBRQevrpzs8tb50Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/platform-feature-experiments@0.3.1",
+   "name": "@atlaskit/platform-feature-experiments",
+   "version": "0.3.1",
+   "purl": "pkg:npm/%40atlaskit/platform-feature-experiments@0.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-K989u4Vv44lppjKJPD//8w+FC/sCiXmSc3Cc/SnVEQZTXtPpMkP3e1T58Lo/S1ewLi1m1Y286zlA0hGYBo1yAA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/platform-feature-flags-react@1.2.0",
+   "name": "@atlaskit/platform-feature-flags-react",
+   "version": "1.2.0",
+   "purl": "pkg:npm/%40atlaskit/platform-feature-flags-react@1.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Vav/2EbQdUd9tmwRjdVls3zvB+LuxDO9M8xQicVBxEHbxb3zUpfdBx2B4SMfyv1wIvKzDQiEgmcgIPu4VAJdqA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/platform-feature-flags@0.3.0",
+   "name": "@atlaskit/platform-feature-flags",
+   "version": "0.3.0",
+   "purl": "pkg:npm/%40atlaskit/platform-feature-flags@0.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/0u5fFJ0Rw2j4M5wzsXgaHO6Ey12oekPCDTRvmmAIp4GO9T2Swbl80bavLAPSOmSHMhHTSuvRxiJveZXfQ21IQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/platform-feature-flags@2.2.1",
+   "name": "@atlaskit/platform-feature-flags",
+   "version": "2.2.1",
+   "purl": "pkg:npm/%40atlaskit/platform-feature-flags@2.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+qR+UIdZ8T+5dqfv4R57YeAqvkj98D6imT+cCIC/PbUBYyMzkjL5MqlGEIX0c3FT9rr/B/b1nupw643xa2Ua2g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/popper@9.4.8",
+   "name": "@atlaskit/popper",
+   "version": "9.4.8",
+   "purl": "pkg:npm/%40atlaskit/popper@9.4.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-gAmTzSfPVcH6MwgZSU0EZ4s+3Yuur2pBNv9LFiurCNkddP3Khit1jdR0uk9WqKY/kslH5QUmpkwTv+tCqX+x5w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/popup@10.1.0",
+   "name": "@atlaskit/popup",
+   "version": "10.1.0",
+   "purl": "pkg:npm/%40atlaskit/popup@10.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-OlOIZ+s8amprpzHBv1Tk82JfX7kN6pALSJ+paUf2U1WxbyF75L3YIb6imWqWB2vS8rhbHyIYh5wJRNuorcWeUA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/portal@7.1.0",
+   "name": "@atlaskit/portal",
+   "version": "7.1.0",
+   "purl": "pkg:npm/%40atlaskit/portal@7.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LSwuHoqPJTwOzJJO/XyE95mlSvaQZ33QH5kLY36LaQoNqkSpoOMYQepJ8CeK6ZH7k516WOSISgc3E/3At7YDBA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-hitbox@3.0.0",
+   "name": "@atlaskit/pragmatic-drag-and-drop-hitbox",
+   "version": "3.0.0",
+   "purl": "pkg:npm/%40atlaskit/pragmatic-drag-and-drop-hitbox@3.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-AGLp1ewjm07eRN2NL62awllSM19FrWVZMQYfZA/jugQlpaeoTr5ah2DE7zfiEt7yrg34htoKQVM+y6SGIQYs2A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-autoscroll@3.2.1",
+   "name": "@atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-autoscroll",
+   "version": "3.2.1",
+   "purl": "pkg:npm/%40atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-autoscroll@3.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-18dNiWVT2dhWVypbZ93cHpWfvThtxYZyFQqZLj+iwXa3JMjsu5mBikizqA5HBDrL5zpL+N8yvzcub4GCUcB6Zw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-migration@3.4.5",
+   "name": "@atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-migration",
+   "version": "3.4.5",
+   "purl": "pkg:npm/%40atlaskit/pragmatic-drag-and-drop-react-beautiful-dnd-migration@3.4.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-yID//BX7RnfPF/QZehLxtNNRQUPTX7wMvqzrt3B/wu/2wMxb3xuHIzMjx91GuR2B3ecfoj3OSk86lUMsHMK2wA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pragmatic-drag-and-drop-react-drop-indicator@4.2.4",
+   "name": "@atlaskit/pragmatic-drag-and-drop-react-drop-indicator",
+   "version": "4.2.4",
+   "purl": "pkg:npm/%40atlaskit/pragmatic-drag-and-drop-react-drop-indicator@4.2.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-jCo1gHLIXaS/GWIlU4qQHAgLQnyEVlnbAuJ+ziRy25aqGurvqrz22Y1tGz7/i5ecDdQpDMDElxOC5kFOhOR6kQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/pragmatic-drag-and-drop@4.0.0",
+   "name": "@atlaskit/pragmatic-drag-and-drop",
+   "version": "4.0.0",
+   "purl": "pkg:npm/%40atlaskit/pragmatic-drag-and-drop@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pyDo2B5NiaExoKGmgeXKGNUL4aR4UzzSZm8QWWjYTEyBLVqSqKyKUwtVxMw2YEkakagOGFONUdHM32LAH2nPug=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/primitives@22.6.0",
+   "name": "@atlaskit/primitives",
+   "version": "22.6.0",
+   "purl": "pkg:npm/%40atlaskit/primitives@22.6.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-JbyV5dfS55LCMRduAOr5IknbifEg0iONY1PjnM9jTMRFOqApprhvSsxLNshICb4SXwd+yzAZXijOnnNgKtrY5g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/progress-bar@5.3.7",
+   "name": "@atlaskit/progress-bar",
+   "version": "5.3.7",
+   "purl": "pkg:npm/%40atlaskit/progress-bar@5.3.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-0aiz/V4gl/MR64x5qzq9V+Eq0bojvYNjW9uAQOkcyu1gIPpJcFt3SUEUhIScnu1Yhl6R77nUyPVdIxaUWVZzEg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/progress-tracker@11.4.4",
+   "name": "@atlaskit/progress-tracker",
+   "version": "11.4.4",
+   "purl": "pkg:npm/%40atlaskit/progress-tracker@11.4.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-kn84zY45TPMfr4WR8xzOn9+eS0e88TUaEJC43u4b7K41bvoLQEuA4xCy1fpEalERvMVP6M7oBFiqzawH5cHa4A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/radio@10.2.6",
+   "name": "@atlaskit/radio",
+   "version": "10.2.6",
+   "purl": "pkg:npm/%40atlaskit/radio@10.2.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-fEqoKGB9E+fo0NWYnFbyt5+L+wnD0bFD38fCWFUN2UfosGcqruMnchLnoKZPrj7aT2xLXZoA9wG7SeV6DSkbnw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/react-compiler-gating@0.2.5",
+   "name": "@atlaskit/react-compiler-gating",
+   "version": "0.2.5",
+   "purl": "pkg:npm/%40atlaskit/react-compiler-gating@0.2.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-94JClgOW8MHXtmV4AVIiJKUJnpb/80ikssQkj7lH6ENxC+BX2KvoObQu9AS0vzkMZYU8O0s6dwv02Xg3jPvOBg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/react-select@4.12.8",
+   "name": "@atlaskit/react-select",
+   "version": "4.12.8",
+   "purl": "pkg:npm/%40atlaskit/react-select@4.12.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dgaK75FkqRyRnhz9VXGLOy5gNvWVxGvWqZY1TvT5hcXzP5B4NKSENeetBVR/P3i7XLm3XRVnzOtohEpG7MRUkw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/react-ufo@7.13.0",
+   "name": "@atlaskit/react-ufo",
+   "version": "7.13.0",
+   "purl": "pkg:npm/%40atlaskit/react-ufo@7.13.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-8uVMq1RWtzxiwP8ocq7ARkdkjwDAiGXzARcckZ6p5rB/yKKy3lKq96VkFwrgbCapJ0u+Zt6Mr3GTyiE+9QFZAA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/react-ufo@8.3.1",
+   "name": "@atlaskit/react-ufo",
+   "version": "8.3.1",
+   "purl": "pkg:npm/%40atlaskit/react-ufo@8.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-WD1W92TM2bMpVqnv2Pb/0WKoMWSdEGdGpT2cwKKsFJW2O44YhnOyz2VxgLz9sskEjl8+l02xX2BAeERr0jFvwg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/section-message@10.2.6",
+   "name": "@atlaskit/section-message",
+   "version": "10.2.6",
+   "purl": "pkg:npm/%40atlaskit/section-message@10.2.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UkN2QpQCp4hNvx2LXjisRXeLVX1yRlPz0t6jcBT5HciniTefmgPrHSQ/Fuzvol5Ch6iKa2Mx55esyT63nXK+hg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/select@23.1.5",
+   "name": "@atlaskit/select",
+   "version": "23.1.5",
+   "purl": "pkg:npm/%40atlaskit/select@23.1.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Jk7UC4T6muAMKQni1Kb2KdfkS9xtWnHtutOlL1JU3ZYXqOkk2KGA04rZcYh4Q0hPvmZZcu2sxGHNNcazwDlPZA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/side-nav-items@2.6.0",
+   "name": "@atlaskit/side-nav-items",
+   "version": "2.6.0",
+   "purl": "pkg:npm/%40atlaskit/side-nav-items@2.6.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zKoBwiEjj7lBosxDKPgVxfpUrySy8JPwwXb8G6NlmKuIwe2PSyFweSrB0YsGKKk95xt/vY4NGeUzalrMAip+eQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/skeleton@4.4.4",
+   "name": "@atlaskit/skeleton",
+   "version": "4.4.4",
+   "purl": "pkg:npm/%40atlaskit/skeleton@4.4.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UGDE48LN0j14rIWuv/OJq5Q3gdPljrDm4NtUEfr8Lld6/x1MKB5OsXkmwT76L/w7tmdcVTJ/wXqTuPWdtwgYlw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/spinner@20.4.4",
+   "name": "@atlaskit/spinner",
+   "version": "20.4.4",
+   "purl": "pkg:npm/%40atlaskit/spinner@20.4.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-8gotKIqhS1k6ULNniSNt6IKAIA3ofHJuiMUdURlTYQ6PP+dyMqUg5dIoeRyLk2VPiuBipSXCFIAiRbSnK3eABQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tabs@21.3.0",
+   "name": "@atlaskit/tabs",
+   "version": "21.3.0",
+   "purl": "pkg:npm/%40atlaskit/tabs@21.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ayBuxliWMcEVv9dwceznk3U1U08YmyW/RQT2gThEhjn9s0BjM9Jas7WRACMSouwft3tXGHMbGOf4pirire0yVw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tag-group@13.4.2",
+   "name": "@atlaskit/tag-group",
+   "version": "13.4.2",
+   "purl": "pkg:npm/%40atlaskit/tag-group@13.4.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-PDQwCldQqnKh7ne5PL+H09LcP0s0hn8mvqYtS/MoJUbsVjR97YxwOGl2IKOnM8DU9aBnsAvjrZQgovNMzQJnVA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tag@17.0.3",
+   "name": "@atlaskit/tag",
+   "version": "17.0.3",
+   "purl": "pkg:npm/%40atlaskit/tag@17.0.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-5AxcBGSndtsSoaSqkMElkXNcG/e0RYoH9LsiEGCl4tcRgdnnjCsInKeSwvz4O9VRlXBnGrL6eu7viyaDpE8epw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/teams-avatar@4.2.0",
+   "name": "@atlaskit/teams-avatar",
+   "version": "4.2.0",
+   "purl": "pkg:npm/%40atlaskit/teams-avatar@4.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-y0oWPDRZQxI1TPaGaqLIfnsPO7pCg4Q1/gJWc67yyhh+xVaX1h3ynofI+7rPPOVrKRkSujJimUuw3IBNFkfCkQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/textarea@10.3.0",
+   "name": "@atlaskit/textarea",
+   "version": "10.3.0",
+   "purl": "pkg:npm/%40atlaskit/textarea@10.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-VBCvgxegflx/DKaCXvdgbq142+P48oFONRAir+iDuc5in4nNrmmBNXypMPNbCHMVpWG08dkri4Bf7d1mzHTdjQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/textfield@10.3.0",
+   "name": "@atlaskit/textfield",
+   "version": "10.3.0",
+   "purl": "pkg:npm/%40atlaskit/textfield@10.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-CWpOgf/dqggb/7DgECHFDNS4uYd+bq5Lp4Qi8CEj0rlyJpQ79TVhoNgTK//tBtxwvnNF9yjzwiGkDDR7gDRn0g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/theme@28.2.5",
+   "name": "@atlaskit/theme",
+   "version": "28.2.5",
+   "purl": "pkg:npm/%40atlaskit/theme@28.2.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-MJftqnfEiBuDKdg9Mn0Eosd+RTOZfCU8uu4V/yqXjf8zLeB03KqNtN/cjxYhvPMx3Br2Ua8h7yOBm20fcGAAqw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tile@5.0.0",
+   "name": "@atlaskit/tile",
+   "version": "5.0.0",
+   "purl": "pkg:npm/%40atlaskit/tile@5.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LZHzXCufzP1GlYhFtM2c1zuchdtvsMMwVKG3paC9Nf9MPlNsMbJH7RfFb2iuRc5jteD3Q5mBBNuHLsCgYmvf5A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tmp-editor-statsig@147.1.0",
+   "name": "@atlaskit/tmp-editor-statsig",
+   "version": "147.1.0",
+   "purl": "pkg:npm/%40atlaskit/tmp-editor-statsig@147.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-h0fMa/N3yQIEwXUWQN9ghsf516gKqqfvDJDSOLY/gI2cbgGq1KTWKp8A8bhrtZY45+kyhrJftsnExCz6oTL6BA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tmp-editor-statsig@248.1.0",
+   "name": "@atlaskit/tmp-editor-statsig",
+   "version": "248.1.0",
+   "purl": "pkg:npm/%40atlaskit/tmp-editor-statsig@248.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-z2Z+av84xJuKKe746DYvsGAoM54FhQEn3XyMaqF1jzD/KvjQOxEhRQT0AkpTZHUHASGXNoM3DZXL/N2XqyzTOA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/toggle@17.3.5",
+   "name": "@atlaskit/toggle",
+   "version": "17.3.5",
+   "purl": "pkg:npm/%40atlaskit/toggle@17.3.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-1vz7z+53Y/X8BH/vhdIZLTuVnh2iMqafryqwaC6a101SoxpSjkfH4IOF79LhoqCvkNbuQBUeLlKsS21C8kX2fw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tokens@1.61.0",
+   "name": "@atlaskit/tokens",
+   "version": "1.61.0",
+   "purl": "pkg:npm/%40atlaskit/tokens@1.61.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-gRkBDZOaQffJHg9g+hYFgPjQ0Hz4XIDaK5WEttIGyhi2USsGsvDvUeED8liqcQNwssH/5UFxIFp3FmEwo0DoFA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tokens@20.8.2",
+   "name": "@atlaskit/tokens",
+   "version": "20.8.2",
+   "purl": "pkg:npm/%40atlaskit/tokens@20.8.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+V6aoZuRhz3uD2GJKX3J/TF1h4X3O6KtDMm5d42d77d+U8C0r8ex+g2i1joFcX2Gw7FGbymM7+TxlTBqlEw7dQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/tooltip@24.4.3",
+   "name": "@atlaskit/tooltip",
+   "version": "24.4.3",
+   "purl": "pkg:npm/%40atlaskit/tooltip@24.4.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-fKqfqhKr1QP9GG6q91p5JE8Uk6H+wSCCEv2G55XpXevqKLFyeUI3KMx81cC+qItvOB5kBy8x+dYViJc26NQJlg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/top-layer@7.0.1",
+   "name": "@atlaskit/top-layer",
+   "version": "7.0.1",
+   "purl": "pkg:npm/%40atlaskit/top-layer@7.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-jvxv9KJaJ65MD2qhmdLe3V/fZ5vn4qHFjFr8I1n1Z8H/yJFUND7/SfL/KNaxqKLyTt1V7gJB9IHTPfXziZirKw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@atlaskit/visually-hidden@4.4.0",
+   "name": "@atlaskit/visually-hidden",
+   "version": "4.4.0",
+   "purl": "pkg:npm/%40atlaskit/visually-hidden@4.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pWru1P8dYWZxmTntklTf8Bi2CHUFLLHpG2RxO7bMzVAV47ebAre4jnQCeUyxwJHe4n0EynaFOD4fTIpXf5+rqw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/code-frame@7.29.7",
+   "name": "@babel/code-frame",
+   "version": "7.29.7",
+   "purl": "pkg:npm/%40babel/code-frame@7.29.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Aup7aUOfpbAUg2ROOJN6Iw5f9DMBlzu0mIkm/malLQFN/YQgO48wCj0Kxa3sEHJvPVFg7siR+qRInwXd2qhQKw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/generator@7.29.12",
+   "name": "@babel/generator",
+   "version": "7.29.12",
+   "purl": "pkg:npm/%40babel/generator@7.29.12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-2W76mhjrpQFO1lK5e8IvGYB2D0YZ7S2R1Z2BjO2ZUYuW+amcpK/z60U6ZZmzskwoa7sJ6XohP/Wg8H5KxXI/IA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/helper-globals@7.29.7",
+   "name": "@babel/helper-globals",
+   "version": "7.29.7",
+   "purl": "pkg:npm/%40babel/helper-globals@7.29.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-3nQVUAtvkKH9zahfWgw96Jc/uFOmjACE1kQz82E2lqWmHBgjzbNlsC22nuQTfahmWeQtTq5nQ/4Nnd2A1wj4zA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/helper-module-imports@7.29.7",
+   "name": "@babel/helper-module-imports",
+   "version": "7.29.7",
+   "purl": "pkg:npm/%40babel/helper-module-imports@7.29.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ejHwrQQYcm9xnTivShn2IDOlIzInN34AXskvq9QicvCtEzq1Vzclu/tKF8Jq1Cg8JG2GL6/EmjgsCT7lXepE3g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/helper-string-parser@7.29.11",
+   "name": "@babel/helper-string-parser",
+   "version": "7.29.11",
+   "purl": "pkg:npm/%40babel/helper-string-parser@7.29.11",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-snZbO7MEDOof+hvNa97EjEY7qD7h2kwvQr5AJC3ZhQudKW5dnej6k3kP9NQV88hJwaS8vDqRLFo9rivLEhle2g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/helper-validator-identifier@7.29.7",
+   "name": "@babel/helper-validator-identifier",
+   "version": "7.29.7",
+   "purl": "pkg:npm/%40babel/helper-validator-identifier@7.29.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/parser@7.29.12",
+   "name": "@babel/parser",
+   "version": "7.29.12",
+   "purl": "pkg:npm/%40babel/parser@7.29.12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-WJ7JBp/Q4+z/ImydtI7jS6NVco5++632ExBemSX+Ysb+G1lCwQ5BVo3SY+jGGOcZXI4ZccbZSUSJLNBW6eEpJg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/runtime@7.29.10",
+   "name": "@babel/runtime",
+   "version": "7.29.10",
+   "purl": "pkg:npm/%40babel/runtime@7.29.10",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-NpugTzbKgGrNe45Ui32cN8vCFFMxVtP/9rtfwv0nP5FRDAjvYBxJcLVpYA9mr1jxP6cnIT7x9LUzuDTbWYYNRA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/template@7.29.7",
+   "name": "@babel/template",
+   "version": "7.29.7",
+   "purl": "pkg:npm/%40babel/template@7.29.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-puq+Gf35oI24FeN11LkoUQFqv9uwNeWpxXZi/Ji3rRIoKAzKnxRaZ+Gkj0vKS9ZCiTESfng1N9LyOyXvo+m+Gg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/traverse@7.29.12",
+   "name": "@babel/traverse",
+   "version": "7.29.12",
+   "purl": "pkg:npm/%40babel/traverse@7.29.12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-MscXe/NAZcOkYEsRajHZFt3ynsb22PUi6CTrp5U7+RYycR9By84mn9mFN54YgfITiqK4hFx3Ju3tZSyzfpS5ew=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@babel/types@7.29.11",
+   "name": "@babel/types",
+   "version": "7.29.11",
+   "purl": "pkg:npm/%40babel/types@7.29.11",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-WCsemW40Cpc6gouC1SrY6PBaZ+oLRlEVY9XBvZBI7il/HyUrb2nJ505wE1MHEFyDZNnrWDEuy4jL50WVHfTTSQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@compiled/react@1.0.2",
+   "name": "@compiled/react",
+   "version": "1.0.2",
+   "purl": "pkg:npm/%40compiled/react@1.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xGOChqGDvoJON+1QOgV4cYmy1W3oonJw43TQ7KR8TuPTlIAHuFBgfckmyMPG4WppF0FYem518LZknySU0uQhlg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/babel-plugin@11.13.5",
+   "name": "@emotion/babel-plugin",
+   "version": "11.13.5",
+   "purl": "pkg:npm/%40emotion/babel-plugin@11.13.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pxHCpT2ex+0q+HH91/zsdHkw/lXd468DIN2zvfvLtPKLLMo6gQj7oLObq8PhkrxOZb/gGCq03S3Z7PDhS8pduQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/cache@11.14.0",
+   "name": "@emotion/cache",
+   "version": "11.14.0",
+   "purl": "pkg:npm/%40emotion/cache@11.14.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-L/B1lc/TViYk4DcpGxtAVbx0ZyiKM5ktoIyafGkH6zg/tj+mA+NE//aPYKG0k8kCHSHVJrpLpcAlOBEXQ3SavA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/hash@0.9.2",
+   "name": "@emotion/hash",
+   "version": "0.9.2",
+   "purl": "pkg:npm/%40emotion/hash@0.9.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-MyqliTZGuOm3+5ZRSaaBGP3USLw6+EGykkwZns2EPC5g8jJ4z9OrdZY9apkl3+UP9+sdz76YYkwCKP5gh8iY3g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/memoize@0.9.0",
+   "name": "@emotion/memoize",
+   "version": "0.9.0",
+   "purl": "pkg:npm/%40emotion/memoize@0.9.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-30FAj7/EoJ5mwVPOWhAyCX+FPfMDrVecJAM+Iw9NRoSl4BBAQeqj4cApHHUXOVvIPgLVDsCFoz/hGD+5QQD1GQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/react@11.14.0",
+   "name": "@emotion/react",
+   "version": "11.14.0",
+   "purl": "pkg:npm/%40emotion/react@11.14.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-O000MLDBDdk/EohJPFUqvnp4qnHeYkVP5B0xEG0D/L7cOKP9kefu2DXn8dj74cQfsEzUqh+sr1RzFqiL1o+PpA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/serialize@1.3.3",
+   "name": "@emotion/serialize",
+   "version": "1.3.3",
+   "purl": "pkg:npm/%40emotion/serialize@1.3.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-EISGqt7sSNWHGI76hC7x1CksiXPahbxEOrC5RjmFRJTqLyEK9/9hZvBbiYn70dw4wuwMKiEMCUlR6ZXTSWQqxA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/sheet@1.4.0",
+   "name": "@emotion/sheet",
+   "version": "1.4.0",
+   "purl": "pkg:npm/%40emotion/sheet@1.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-fTBW9/8r2w3dXWYM4HCB1Rdp8NLibOw2+XELH5m5+AkWiL/KqYX6dc0kKYlaYyKjrQ6ds33MCdMPEwgs2z1rqg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/unitless@0.10.0",
+   "name": "@emotion/unitless",
+   "version": "0.10.0",
+   "purl": "pkg:npm/%40emotion/unitless@0.10.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dFoMUuQA20zvtVTuxZww6OHoJYgrzfKM1t52mVySDJnMSEa08ruEvdYQbhvyu6soU+NeLVd3yKfTfT0NeV6qGg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/use-insertion-effect-with-fallbacks@1.2.0",
+   "name": "@emotion/use-insertion-effect-with-fallbacks",
+   "version": "1.2.0",
+   "purl": "pkg:npm/%40emotion/use-insertion-effect-with-fallbacks@1.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-yJMtVdH59sxi/aVJBpk9FQq+OR8ll5GT8oWd57UpeaKEVGab41JWaCFA7FRLoMLloOZF/c/wsPoe+bfGmRKgDg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/utils@1.4.2",
+   "name": "@emotion/utils",
+   "version": "1.4.2",
+   "purl": "pkg:npm/%40emotion/utils@1.4.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-3vLclRofFziIa3J2wDh9jjbkUz9qk5Vi3IZ/FSTKViB0k+ef0fPV7dYrUIugbgupYDx7v9ud/SjrtEP8Y4xLoA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@emotion/weak-memoize@0.4.0",
+   "name": "@emotion/weak-memoize",
+   "version": "0.4.0",
+   "purl": "pkg:npm/%40emotion/weak-memoize@0.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-snKqtPW01tN0ui7yu9rGv69aJXr/a/Ywvl11sUjNtEcRc+ng/mQriFL0wLXMef74iHa/EkftbDzU9F8iFbH+zg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@floating-ui/core@1.8.0",
+   "name": "@floating-ui/core",
+   "version": "1.8.0",
+   "purl": "pkg:npm/%40floating-ui/core@1.8.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-0CIZ5itps/8x7BG8dEIhs53BvCUH2PCoogtakwRTut+Arm58sJooJ0AuZhLw2HJYIR5cMLNPBSS728sPho2khQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@floating-ui/dom@1.8.0",
+   "name": "@floating-ui/dom",
+   "version": "1.8.0",
+   "purl": "pkg:npm/%40floating-ui/dom@1.8.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-yXSrzeHZBTZadLOlfyhCkJHNeLJnHRnRInwdZ40L7ZiaAtrBwoYlsDrX3v5zB1Utk7CLfzcOVnVVWoXEky7Ceg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@floating-ui/utils@0.2.12",
+   "name": "@floating-ui/utils",
+   "version": "0.2.12",
+   "purl": "pkg:npm/%40floating-ui/utils@0.2.12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/api@8.4.0",
+   "name": "@forge/api",
+   "version": "8.4.0",
+   "purl": "pkg:npm/%40forge/api@8.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-XLT1EWh9MyrnX9qsGZoj54ByJ3fXgD4kIWxgMf3oqFuDDf2vvOXsRrNIf/Rsq23SIQLuRex+V8emulZKhgVmHA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/auth@1.0.0",
+   "name": "@forge/auth",
+   "version": "1.0.0",
+   "purl": "pkg:npm/%40forge/auth@1.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-lEwaTIS9lZAMeuf9TfuP/OyhoJz1SCoIt5ZbgbgPtG3SV/KYdI2qSW6xafnONy0iAaKJo5D3VDBEbm7K1d+qog=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/bridge@7.2.1",
+   "name": "@forge/bridge",
+   "version": "7.2.1",
+   "purl": "pkg:npm/%40forge/bridge@7.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-99xh+wzL849b0fYpqU0uYUxNAaZHS1azkxorJcRwg3sfhjfjjOhgq+A+AqIdj5c85TutK6P97GNTYbVhQQKQ+w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/egress@3.0.1",
+   "name": "@forge/egress",
+   "version": "3.0.1",
+   "purl": "pkg:npm/%40forge/egress@3.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-G32D+jtr9P6x5Lgikcf6P7oBIguFID89nUDoCHpTwk7dkySEBTQZ5mHUm1Til4/K6M0NY1gxAL0ULm0X6gqJiA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/events@3.0.9",
+   "name": "@forge/events",
+   "version": "3.0.9",
+   "purl": "pkg:npm/%40forge/events@3.0.9",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dv01WKtf5tWx/aBJv89uzB5xb3nFlE4yPf4vncxe3sKdHsZKJDURYoM/3uaE26j32KmbLJT+0d0mTnfUA3Ky8w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/i18n@1.0.1",
+   "name": "@forge/i18n",
+   "version": "1.0.1",
+   "purl": "pkg:npm/%40forge/i18n@1.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-iZqAOvaq0MwMPplC0U0HLpQ/cOYUumxH3D6OO3PoSBDm6P1tD2Bdb8lND0CmL1+SZhsp7GS5DDd265/sVyMMDA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/kvs@2.1.1",
+   "name": "@forge/kvs",
+   "version": "2.1.1",
+   "purl": "pkg:npm/%40forge/kvs@2.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-DWZiAtGVsFx3gk6NAzTSGYyikVxN5k+A/Wc58IxmENLoDaReSsRgeKLTcHmnN+fpMnovx7IEQ90zh1uUgXkjzQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/manifest@13.8.0",
+   "name": "@forge/manifest",
+   "version": "13.8.0",
+   "purl": "pkg:npm/%40forge/manifest@13.8.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-MBIHQN0Y/AFpjd12sBlVaMAcnmRtg+g8lhX3A2Sk/I18AAfKePL+WdH8jaubmBFdQUXAc+t6AkBR2Jor/vRPSw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/react@12.4.0",
+   "name": "@forge/react",
+   "version": "12.4.0",
+   "purl": "pkg:npm/%40forge/react@12.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-rWaJAzx6vVUfUdVGNVJLu4V0kLle/mPQbnZO8sXDfnWUU+3yKeZb42RCKhKmTdiDTyO4MNnWa9/MY3vj+sLBiQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/resolver@2.0.2",
+   "name": "@forge/resolver",
+   "version": "2.0.2",
+   "purl": "pkg:npm/%40forge/resolver@2.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "SEE LICENSE IN LICENSE.txt"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LIAW/lS/1prKWhO3KPj9uaOSIvXL8Sv0vFHuW6yEHKRcAVF8vt7qDDVmkQwAsnx74QtRywDzN7UZuzeNKqhq0g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@forge/teamwork-graph@5.3.2",
+   "name": "@forge/teamwork-graph",
+   "version": "5.3.2",
+   "purl": "pkg:npm/%40forge/teamwork-graph@5.3.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "UNLICENSED"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-yLFpVIJyAxqqFiGFOnhXBv0ZUEVJBbdwGaNkQpGOAOkOZj6tAoYHNjueX37Byop1OaZ7HXBlGis1FFfJklCwDw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@jridgewell/gen-mapping@0.3.13",
+   "name": "@jridgewell/gen-mapping",
+   "version": "0.3.13",
+   "purl": "pkg:npm/%40jridgewell/gen-mapping@0.3.13",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-2kkt/7niJ6MgEPxF0bYdQ6etZaA+fQvDcLKckhy1yIQOzaoKjBBjSj63/aLVjYE3qhRt5dvM+uUyfCg6UKCBbA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@jridgewell/resolve-uri@3.1.2",
+   "name": "@jridgewell/resolve-uri",
+   "version": "3.1.2",
+   "purl": "pkg:npm/%40jridgewell/resolve-uri@3.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-bRISgCIjP20/tbWSPWMEi54QVPRZExkuD9lJL+UIxUKtwVJA8wW1Trb1jMs1RFXo1CBTNZ/5hpC9QvmKWdopKw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@jridgewell/sourcemap-codec@1.6.0",
+   "name": "@jridgewell/sourcemap-codec",
+   "version": "1.6.0",
+   "purl": "pkg:npm/%40jridgewell/sourcemap-codec@1.6.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@jridgewell/trace-mapping@0.3.31",
+   "name": "@jridgewell/trace-mapping",
+   "version": "0.3.31",
+   "purl": "pkg:npm/%40jridgewell/trace-mapping@0.3.31",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@opentelemetry/api@1.10.0",
+   "name": "@opentelemetry/api",
+   "version": "1.10.0",
+   "purl": "pkg:npm/%40opentelemetry/api@1.10.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-lMkyes8iHrG+mk6WH7X70MdCLI2RS0FwNBY1PyQ8UemaijE2m5mv5A0Niy3HtbYTFrgkUEQjFMXmSAk2hQDuPQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@popperjs/core@2.11.8",
+   "name": "@popperjs/core",
+   "version": "2.11.8",
+   "purl": "pkg:npm/%40popperjs/core@2.11.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@sentry-internal/tracing@7.106.0",
+   "name": "@sentry-internal/tracing",
+   "version": "7.106.0",
+   "purl": "pkg:npm/%40sentry-internal/tracing@7.106.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-O8Es6Sa/tP80nfl+8soNfWzeRNFcT484SvjLR8BS3pHM9KDAlwNXyoQhFr2BKNYL1irbq6UF6eku4xCnUKVmqA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@sentry/core@7.106.0",
+   "name": "@sentry/core",
+   "version": "7.106.0",
+   "purl": "pkg:npm/%40sentry/core@7.106.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Dc13XtnyFaXup2E4vCbzuG0QKAVjrJBk4qfGwvSJaTuopEaEWBs2MpK6hRzFhsz9S3T0La7c1F/62NptvTUWsQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@sentry/node@7.106.0",
+   "name": "@sentry/node",
+   "version": "7.106.0",
+   "purl": "pkg:npm/%40sentry/node@7.106.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-4DIqbu5K7//lK/k2nV8lqKeGQzhu2T1OpJFmiUrjN6fUKWivGFjZrcmQDS7tvhAAyJezkL3LlrNU4tjPHUElPA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@sentry/types@7.106.0",
+   "name": "@sentry/types",
+   "version": "7.106.0",
+   "purl": "pkg:npm/%40sentry/types@7.106.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-oKTkDaL6P9xJC5/zHLRemHTWboUqRYjkJNaZCN63j4kJqGy56wee4vDtDese/NWWn4U4C1QV1h+Mifm2HmDcQg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@sentry/utils@7.106.0",
+   "name": "@sentry/utils",
+   "version": "7.106.0",
+   "purl": "pkg:npm/%40sentry/utils@7.106.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-bVsePsXLpFu/1sH4rpJrPcnVxW2fXXfGfGxKs6Bm+dkOMbuVTlk/KAzIbdjCDIpVlrMDJmMNEv5xgTFjgWDkjw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@statsig/client-core@3.30.2",
+   "name": "@statsig/client-core",
+   "version": "3.30.2",
+   "purl": "pkg:npm/%40statsig/client-core@3.30.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-F3u1+LDml6IFz/tMbSYI0pEOMR13OHM71lLJ3RuoWpK2KpCwfsHpt7kBmUKJxUXZ05CP/jWgmhG/ROj7eqDCPQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@statsig/js-client@3.30.2",
+   "name": "@statsig/js-client",
+   "version": "3.30.2",
+   "purl": "pkg:npm/%40statsig/js-client@3.30.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Cjs4uzyAxt1sw44oa6qSNWuZdO11jmgrpOVBC2NajtpA55GBmAfjZ3vQdXizUffUZMRmFiEpGwxi9zmjFEG7Sw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/history@4.7.11",
+   "name": "@types/history",
+   "version": "4.7.11",
+   "purl": "pkg:npm/%40types/history@4.7.11",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/iframe-resizer@3.5.13",
+   "name": "@types/iframe-resizer",
+   "version": "3.5.13",
+   "purl": "pkg:npm/%40types/iframe-resizer@3.5.13",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/Np2ntlOWd/NOHs23Mj7QlNEnZ6SL02AWWdYZLm4RQNukDdpqpagfMAdin5FvQDLngR8LWfh/qUnYxuDmR8BCg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/linkify-it@5.0.0",
+   "name": "@types/linkify-it",
+   "version": "5.0.0",
+   "purl": "pkg:npm/%40types/linkify-it@5.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/markdown-it@14.2.0",
+   "name": "@types/markdown-it",
+   "version": "14.2.0",
+   "purl": "pkg:npm/%40types/markdown-it@14.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-NoQ2yGlLWj4wpxMs+TYmRKk3thDrQ97agr7sFqfLsAlvoS8SNQuTrlObhFqG9iugdTtgOE9jpJ6FNM4ZGsa5xQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/mdurl@2.0.0",
+   "name": "@types/mdurl",
+   "version": "2.0.0",
+   "purl": "pkg:npm/%40types/mdurl@2.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/parse-json@4.0.2",
+   "name": "@types/parse-json",
+   "version": "4.0.2",
+   "purl": "pkg:npm/%40types/parse-json@4.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/prop-types@15.7.15",
+   "name": "@types/prop-types",
+   "version": "15.7.15",
+   "purl": "pkg:npm/%40types/prop-types@15.7.15",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/react-reconciler@0.28.9",
+   "name": "@types/react-reconciler",
+   "version": "0.28.9",
+   "purl": "pkg:npm/%40types/react-reconciler@0.28.9",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-HHM3nxyUZ3zAylX8ZEyrDNd2XZOnQ0D5XfunJF5FLQnZbHHYq4UWvW1QfelQNXv1ICNkwYhfxjwfnqivYB6bFg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/@types/react@18.3.31",
+   "name": "@types/react",
+   "version": "18.3.31",
+   "purl": "pkg:npm/%40types/react@18.3.31",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-vfEqpXTvwT91yhmwdfouStN2hSKwTvyRs8qpLfADyrq/kxDw0hZM7Wk9Ug1FELj8hIby+S/+kQCSRFF32nv2Qw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ajv-formats@2.1.1",
+   "name": "ajv-formats",
+   "version": "2.1.1",
+   "purl": "pkg:npm/ajv-formats@2.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ajv@8.20.0",
+   "name": "ajv",
+   "version": "8.20.0",
+   "purl": "pkg:npm/ajv@8.20.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Thbli+OlOj+iMPYFBVBfJ3OmCAnaSyNn4M1vz9T6Gka5Jt9ba/HIR56joy65tY6kx/FCF5VXNB819Y7/GUrBGA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/argparse@2.0.1",
+   "name": "argparse",
+   "version": "2.0.1",
+   "purl": "pkg:npm/argparse@2.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "Python-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/babel-plugin-macros@3.1.0",
+   "name": "babel-plugin-macros",
+   "version": "3.1.0",
+   "purl": "pkg:npm/babel-plugin-macros@3.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/balanced-match@4.0.4",
+   "name": "balanced-match",
+   "version": "4.0.4",
+   "purl": "pkg:npm/balanced-match@4.0.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-BLrgEcRTwX2o6gGxGOCNyMvGSp35YofuYzw9h1IMTRmKqttAZZVU67bdb9Pr2vUHA8+j3i2tJfjO6C6+4myGTA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/bind-event-listener@3.0.0",
+   "name": "bind-event-listener",
+   "version": "3.0.0",
+   "purl": "pkg:npm/bind-event-listener@3.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-PJvH288AWQhKs2v9zyfYdPzlPqf5bXbGMmhmUIY9x4dAUGIWgomO771oBQNwJnMQSnUIXhKu6sgzpBRXTlvb8Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/boolbase@1.0.0",
+   "name": "boolbase",
+   "version": "1.0.0",
+   "purl": "pkg:npm/boolbase@1.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/bowser-ultralight@1.0.6",
+   "name": "bowser-ultralight",
+   "version": "1.0.6",
+   "purl": "pkg:npm/bowser-ultralight@1.0.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ASWi8n3c6JvsUhbjproHnT4Mdhs4Q9wOxq1oSjUkM2e5StEEUmy1ej4UNOLSyeU4ANQFTx+mY+bsv/aH+AIcpg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/brace-expansion@5.0.12",
+   "name": "brace-expansion",
+   "version": "5.0.12",
+   "purl": "pkg:npm/brace-expansion@5.0.12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-YovQ3rzhaLMIrDjNDMkNS01tea93qhEhG5xy8f6+R0l+dw3Ki+5sCoIoI942iuLZTHWogWktgwVDhU09iNEimQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/callsites@3.1.0",
+   "name": "callsites",
+   "version": "3.1.0",
+   "purl": "pkg:npm/callsites@3.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cheerio-select@2.1.0",
+   "name": "cheerio-select",
+   "version": "2.1.0",
+   "purl": "pkg:npm/cheerio-select@2.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-9v9kG0LvzrlcungtnJtpGNxY+fzECQKhK4EGJX2vByejiMX84MFNQw4UxPJl3bFbTMw+Dfs37XaIkCwTZfLh4g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cheerio@1.2.0",
+   "name": "cheerio",
+   "version": "1.2.0",
+   "purl": "pkg:npm/cheerio@1.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-WDrybc/gKFpTYQutKIK6UvfcuxijIZfMfXaYm8NMsPQxSYvf+13fXUJ4rztGGbJcBQ/GF55gvrZ0Bc0bj/mqvg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/convert-source-map@1.9.0",
+   "name": "convert-source-map",
+   "version": "1.9.0",
+   "purl": "pkg:npm/convert-source-map@1.9.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cosmiconfig@7.1.0",
+   "name": "cosmiconfig",
+   "version": "7.1.0",
+   "purl": "pkg:npm/cosmiconfig@7.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/css-box-model@1.2.1",
+   "name": "css-box-model",
+   "version": "1.2.1",
+   "purl": "pkg:npm/css-box-model@1.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-a7Vr4Q/kd/aw96bnJG332W9V9LkJO69JRcaCYDUqjp6/z0w6VcZjgAcTbgFxEPfBgdnAwlh3iwu+hLopa+flJw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/css-color-names@0.0.4",
+   "name": "css-color-names",
+   "version": "0.0.4",
+   "purl": "pkg:npm/css-color-names@0.0.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zj5D7X1U2h2zsXOAM8EyUREBnnts6H+Jm+d1M2DbiQQcUtnqgQsMrdo8JW9R80YFUmIdBZeMu5wvYM7hcgWP/Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/css-select@5.2.2",
+   "name": "css-select",
+   "version": "5.2.2",
+   "purl": "pkg:npm/css-select@5.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TizTzUddG/xYLA3NXodFM0fSbNizXjOKhqiQQwvhlspadZokn1KDy0NZFS0wuEubIYAV5/c1/lAr0TaaFXEXzw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/css-what@6.2.2",
+   "name": "css-what",
+   "version": "6.2.2",
+   "purl": "pkg:npm/css-what@6.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-u/O3vwbptzhMs3L1fQE82ZSLHQQfto5gyZzwteVIEyeaY5Fc7R4dapF/BvRoSYFeqfBk4m0V1Vafq5Pjv25wvA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/csstype@3.2.3",
+   "name": "csstype",
+   "version": "3.2.3",
+   "purl": "pkg:npm/csstype@3.2.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/date-fns@2.30.0",
+   "name": "date-fns",
+   "version": "2.30.0",
+   "purl": "pkg:npm/date-fns@2.30.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/debug@4.4.3",
+   "name": "debug",
+   "version": "4.4.3",
+   "purl": "pkg:npm/debug@4.4.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/detect-node-es@1.1.0",
+   "name": "detect-node-es",
+   "version": "1.1.0",
+   "purl": "pkg:npm/detect-node-es@1.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ypdmJU/TbBby2Dxibuv7ZLW3Bs1QEmM7nHjEANfohJLvE0XVujisn1qPJcZxg+qDucsr+bP6fLD1rPS3AhJ7EQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/dom-serializer@2.0.0",
+   "name": "dom-serializer",
+   "version": "2.0.0",
+   "purl": "pkg:npm/dom-serializer@2.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/domelementtype@2.3.0",
+   "name": "domelementtype",
+   "version": "2.3.0",
+   "purl": "pkg:npm/domelementtype@2.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/domhandler@5.0.3",
+   "name": "domhandler",
+   "version": "5.0.3",
+   "purl": "pkg:npm/domhandler@5.0.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/domutils@3.2.2",
+   "name": "domutils",
+   "version": "3.2.2",
+   "purl": "pkg:npm/domutils@3.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/encoding-sniffer@0.2.1",
+   "name": "encoding-sniffer",
+   "version": "0.2.1",
+   "purl": "pkg:npm/encoding-sniffer@0.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-5gvq20T6vfpekVtqrYQsSCFZ1wEg5+wW0/QaZMWkFr6BqD3NfKs0rLCx4rrVlSWJeZb5NBJgVLswK/w2MWU+Gw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/entities@4.5.0",
+   "name": "entities",
+   "version": "4.5.0",
+   "purl": "pkg:npm/entities@4.5.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/entities@6.0.1",
+   "name": "entities",
+   "version": "6.0.1",
+   "purl": "pkg:npm/entities@6.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-aN97NXWF6AWBTahfVOIrB/NShkzi5H7F9r1s9mD3cDj4Ko5f2qhhVoYMibXF7GlLveb/D2ioWay8lxI97Ven3g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/entities@7.0.1",
+   "name": "entities",
+   "version": "7.0.1",
+   "purl": "pkg:npm/entities@7.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TWrgLOFUQTH994YUyl1yT4uyavY5nNB5muff+RtWaqNVCAK408b5ZnnbNAUEWLTCpum9w6arT70i1XdQ4UeOPA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/error-ex@1.3.4",
+   "name": "error-ex",
+   "version": "1.3.4",
+   "purl": "pkg:npm/error-ex@1.3.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-sqQamAnR14VgCr1A618A3sGrygcpK+HEbenA/HiEAkkUwcZIIB/tgWqHFxWgOyDh4nB4JCRimh79dR5Ywc9MDQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/es-errors@1.3.0",
+   "name": "es-errors",
+   "version": "1.3.0",
+   "purl": "pkg:npm/es-errors@1.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/escape-string-regexp@4.0.0",
+   "name": "escape-string-regexp",
+   "version": "4.0.0",
+   "purl": "pkg:npm/escape-string-regexp@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/eventemitter3@4.0.7",
+   "name": "eventemitter3",
+   "version": "4.0.7",
+   "purl": "pkg:npm/eventemitter3@4.0.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/exenv@1.2.2",
+   "name": "exenv",
+   "version": "1.2.2",
+   "purl": "pkg:npm/exenv@1.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Z+ktTxTwv9ILfgKCk32OX3n/doe+OcLTRtqK9pcL+JsP3J1/VW8Uvl4ZjLlKqeW4rzK4oesDOGMEMRIZqtP4Iw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fast-deep-equal@3.1.3",
+   "name": "fast-deep-equal",
+   "version": "3.1.3",
+   "purl": "pkg:npm/fast-deep-equal@3.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fast-uri@3.1.9",
+   "name": "fast-uri",
+   "version": "3.1.9",
+   "purl": "pkg:npm/fast-uri@3.1.9",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-hS/0Wt3Ya043oKXs0sIxrMpKQITXhMLIrVAKKXi4gozGC9v7YRWVnXIZzjNPTO02M9BdxLCWqK1yRXgNziVyJQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/final-form-focus@1.1.2",
+   "name": "final-form-focus",
+   "version": "1.1.2",
+   "purl": "pkg:npm/final-form-focus@1.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Gd+Bd2Ll7ijo3/sd6kJ/bwLkhc2bUJPxTON6fIqee/008EJpACWhT+zoWCm9q6NcfMcWRS+Sp5ikRX8iqdXeGQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/final-form@4.20.10",
+   "name": "final-form",
+   "version": "4.20.10",
+   "purl": "pkg:npm/final-form@4.20.10",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TL48Pi1oNHeMOHrKv1bCJUrWZDcD3DIG6AGYVNOnyZPr7Bd/pStN0pL+lfzF5BNoj/FclaoiaLenk4XUIFVYng=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/find-root@1.1.0",
+   "name": "find-root",
+   "version": "1.1.0",
+   "purl": "pkg:npm/find-root@1.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-NKfW6bec6GfKc0SGx1e07QZY9PE99u0Bft/0rzSD5k3sO/vwkVUpDUKVm5Gpp5Ue3YfShPFTX2070tDs5kB9Ng=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/focus-lock@1.3.6",
+   "name": "focus-lock",
+   "version": "1.3.6",
+   "purl": "pkg:npm/focus-lock@1.3.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Ik/6OCk9RQQ0T5Xw+hKNLWrjSMtv51dD4GRmJjbD5a58TIEpI5a5iXagKVl3Z5UuyslMCA8Xwnu76jQob62Yhg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/focus-trap@2.4.6",
+   "name": "focus-trap",
+   "version": "2.4.6",
+   "purl": "pkg:npm/focus-trap@2.4.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-vWZTPtBU6pBoyWZDRZJHkXsyP2ZCZBHE3DRVXnSVdQKH/mcDtu9S5Kz8CUDyIqpfZfLEyI9rjKJLnc4Y40BRBg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/function-bind@1.1.2",
+   "name": "function-bind",
+   "version": "1.1.2",
+   "purl": "pkg:npm/function-bind@1.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/glob@13.0.6",
+   "name": "glob",
+   "version": "13.0.6",
+   "purl": "pkg:npm/glob@13.0.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/hasown@2.0.4",
+   "name": "hasown",
+   "version": "2.0.4",
+   "purl": "pkg:npm/hasown@2.0.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-T2UbfbBEF32wiepXIsMlTW9+dDYC6wMh/t/vYA4tuOMKqWz/n3vr1NFSxQiyP+zk2mXsoMA/i/7qV6LKut1t1A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/headers-utils@3.0.2",
+   "name": "headers-utils",
+   "version": "3.0.2",
+   "purl": "pkg:npm/headers-utils@3.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xAxZkM1dRyGV2Ou5bzMxBPNLoRCjcX+ya7KSWybQD2KwLphxsapUVK6x/02o7f4VU6GPSXch9vNY2+gkU8tYWQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/hoist-non-react-statics@3.3.2",
+   "name": "hoist-non-react-statics",
+   "version": "3.3.2",
+   "purl": "pkg:npm/hoist-non-react-statics@3.3.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/htmlparser2@10.1.0",
+   "name": "htmlparser2",
+   "version": "10.1.0",
+   "purl": "pkg:npm/htmlparser2@10.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-VTZkM9GWRAtEpveh7MSF6SjjrpNVNNVJfFup7xTY3UpFtm67foy9HDVXneLtFVt4pMz5kZtgNcvCniNFb1hlEQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/iconv-lite@0.6.3",
+   "name": "iconv-lite",
+   "version": "0.6.3",
+   "purl": "pkg:npm/iconv-lite@0.6.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/iframe-resizer@4.4.5",
+   "name": "iframe-resizer",
+   "version": "4.4.5",
+   "purl": "pkg:npm/iframe-resizer@4.4.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-U8bCywf/Gh07O69RXo6dXAzTtODQrxaHGHRI7Nt4ipXsuq6EMxVsOP/jjaP43YtXz/ibESS0uSVDN3sOGCzSmw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/import-fresh@3.3.1",
+   "name": "import-fresh",
+   "version": "3.3.1",
+   "purl": "pkg:npm/import-fresh@3.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-arrayish@0.2.1",
+   "name": "is-arrayish",
+   "version": "0.2.1",
+   "purl": "pkg:npm/is-arrayish@0.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zz06S8t0ozoDXMG+ube26zeCTNXcKIPJZJi8hBrF4idCLms4CG9QtK7qBl1boi5ODzFpjswb5JPmHCbMpjaYzg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-core-module@2.17.0",
+   "name": "is-core-module",
+   "version": "2.17.0",
+   "purl": "pkg:npm/is-core-module@2.17.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-J/vG0zBCbIKOQFfufSwyXdMrsohyJIUNkrnmo6WZGzoM7tr/lsbfW5b2BvisL6zsyMzK9UxV9L6c7AoFbyXHOA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/js-tokens@4.0.0",
+   "name": "js-tokens",
+   "version": "4.0.0",
+   "purl": "pkg:npm/js-tokens@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/jsesc@3.1.0",
+   "name": "jsesc",
+   "version": "3.1.0",
+   "purl": "pkg:npm/jsesc@3.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/sM3dO2FOzXjKQhJuo0Q173wf2KOo8t4I8vHy6lF9poUp7bKT0/NHE8fPX23PwfhnykfqnC2xRxOnVw5XuGIaA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/json-parse-even-better-errors@2.3.1",
+   "name": "json-parse-even-better-errors",
+   "version": "2.3.1",
+   "purl": "pkg:npm/json-parse-even-better-errors@2.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/json-schema-traverse@1.0.0",
+   "name": "json-schema-traverse",
+   "version": "1.0.0",
+   "purl": "pkg:npm/json-schema-traverse@1.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lines-and-columns@1.2.4",
+   "name": "lines-and-columns",
+   "version": "1.2.4",
+   "purl": "pkg:npm/lines-and-columns@1.2.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/linkify-it@5.0.2",
+   "name": "linkify-it",
+   "version": "5.0.2",
+   "purl": "pkg:npm/linkify-it@5.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ONTm2jCMAVZjgQa/Fy1kScXsuOoF5NPTsoFBdE1KVIZ2vAh/r9+Bqo+0jINCBYnavTPQZz38QzFTme79ENoN3Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lodash@4.18.1",
+   "name": "lodash",
+   "version": "4.18.1",
+   "purl": "pkg:npm/lodash@4.18.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/loose-envify@1.4.0",
+   "name": "loose-envify",
+   "version": "1.4.0",
+   "purl": "pkg:npm/loose-envify@1.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lru-cache@11.5.3",
+   "name": "lru-cache",
+   "version": "11.5.3",
+   "purl": "pkg:npm/lru-cache@11.5.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-U4N8FgzmWxc8k1VH8Kr6lQg18U7Fjvby6wXHVRX/ZZ7IwWbRMgrRbP0Wrb5q5NVinryp4SQampHKdvtecItxUg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/markdown-it@14.3.3",
+   "name": "markdown-it",
+   "version": "14.3.3",
+   "purl": "pkg:npm/markdown-it@14.3.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-L//tDAkjTjJCU6pBUSBTgs3Kg4InVaZuUZog/b6V12UKhcDQ7S78877ibbCanRExwPuYP1CZD7Gd2dxSy1GXRg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mdurl@2.1.0",
+   "name": "mdurl",
+   "version": "2.1.0",
+   "purl": "pkg:npm/mdurl@2.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/memoize-one@6.0.0",
+   "name": "memoize-one",
+   "version": "6.0.0",
+   "purl": "pkg:npm/memoize-one@6.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-rkpe71W0N0c0Xz6QD0eJETuWAJGnJ9afsl1srmwPrI+yBCkge5EycXXbYRyvL29zZVUWQCY7InPRCv3GDXuZNw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mime-db@1.52.0",
+   "name": "mime-db",
+   "version": "1.52.0",
+   "purl": "pkg:npm/mime-db@1.52.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mime-types@2.1.35",
+   "name": "mime-types",
+   "version": "2.1.35",
+   "purl": "pkg:npm/mime-types@2.1.35",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/minimatch@10.2.6",
+   "name": "minimatch",
+   "version": "10.2.6",
+   "purl": "pkg:npm/minimatch@10.2.6",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-vpLQEs+VLCr1nU0BXS07maYoFwlDAH0gngQuuttxIwutDFEMHq2blX+8vpgxDdK3J1PwjCJiep77OitTZ4Ll1A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/minipass@7.1.3",
+   "name": "minipass",
+   "version": "7.1.3",
+   "purl": "pkg:npm/minipass@7.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ms@2.1.3",
+   "name": "ms",
+   "version": "2.1.3",
+   "purl": "pkg:npm/ms@2.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/nth-check@2.1.1",
+   "name": "nth-check",
+   "version": "2.1.1",
+   "purl": "pkg:npm/nth-check@2.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/object-assign@4.1.1",
+   "name": "object-assign",
+   "version": "4.1.1",
+   "purl": "pkg:npm/object-assign@4.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/orderedmap@2.1.1",
+   "name": "orderedmap",
+   "version": "2.1.1",
+   "purl": "pkg:npm/orderedmap@2.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-TvAWxi0nDe1j/rtMcWcIj94+Ffe6n7zhow33h40SKxmsmozs6dz/e+EajymfoFcHd7sxNn8yHM8839uixMOV6g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parent-module@1.0.1",
+   "name": "parent-module",
+   "version": "1.0.1",
+   "purl": "pkg:npm/parent-module@1.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse-json@5.2.0",
+   "name": "parse-json",
+   "version": "5.2.0",
+   "purl": "pkg:npm/parse-json@5.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ayCKvm/phCGxOkYRSCM82iDwct8/EonSEgCSxWxD7ve6jHggsFl4fZVQBPRNgQoKiuV/odhFrGzQXZwbifC8Rg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse5-htmlparser2-tree-adapter@7.1.0",
+   "name": "parse5-htmlparser2-tree-adapter",
+   "version": "7.1.0",
+   "purl": "pkg:npm/parse5-htmlparser2-tree-adapter@7.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ruw5xyKs6lrpo9x9rCZqZZnIUntICjQAd0Wsmp396Ul9lN/h+ifgVV1x1gZHi8euej6wTfpqX8j+BFQxF0NS/g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse5-parser-stream@7.1.2",
+   "name": "parse5-parser-stream",
+   "version": "7.1.2",
+   "purl": "pkg:npm/parse5-parser-stream@7.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-JyeQc9iwFLn5TbvvqACIF/VXG6abODeB3Fwmv/TGdLk2LfbWkaySGY72at4+Ty7EkPZj854u4CrICqNk2qIbow=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse5@7.3.0",
+   "name": "parse5",
+   "version": "7.3.0",
+   "purl": "pkg:npm/parse5@7.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-IInvU7fabl34qmi9gY8XOVxhYyMyuH2xUNpb2q8/Y+7552KlejkRvqvD19nMoUW/uQGGbqNpA6Tufu5FL5BZgw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-parse@1.0.7",
+   "name": "path-parse",
+   "version": "1.0.7",
+   "purl": "pkg:npm/path-parse@1.0.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-scurry@2.0.2",
+   "name": "path-scurry",
+   "version": "2.0.2",
+   "purl": "pkg:npm/path-scurry@2.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-3O/iVVsJAPsOnpwWIeD+d6z/7PmqApyQePUtCndjatj/9I5LylHvt5qluFaBT3I5h3r1ejfR056c+FCv+NnNXg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-type@4.0.0",
+   "name": "path-type",
+   "version": "4.0.0",
+   "purl": "pkg:npm/path-type@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/picocolors@1.1.1",
+   "name": "picocolors",
+   "version": "1.1.1",
+   "purl": "pkg:npm/picocolors@1.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prop-types@15.8.1",
+   "name": "prop-types",
+   "version": "15.8.1",
+   "purl": "pkg:npm/prop-types@15.8.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-commands@1.7.1",
+   "name": "prosemirror-commands",
+   "version": "1.7.1",
+   "purl": "pkg:npm/prosemirror-commands@1.7.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-rT7qZnQtx5c0/y/KlYaGvtG411S97UaL6gdp6RIZ23DLHanMYLyfGBV5DtSnZdthQql7W+lEVbpSfwtO8T+L2w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-dropcursor@1.8.2",
+   "name": "prosemirror-dropcursor",
+   "version": "1.8.2",
+   "purl": "pkg:npm/prosemirror-dropcursor@1.8.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-CCk6Gyx9+Tt2sbYk5NK0nB1ukHi2ryaRgadV/LvyNuO3ena1payM2z6Cg0vO1ebK8cxbzo41ku2DE5Axj1Zuiw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-history@1.5.0",
+   "name": "prosemirror-history",
+   "version": "1.5.0",
+   "purl": "pkg:npm/prosemirror-history@1.5.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zlzTiH01eKA55UAf1MEjtssJeHnGxO0j4K4Dpx+gnmX9n+SHNlDqI2oO1Kv1iPN5B1dm5fsljCfqKF9nFL6HRg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-keymap@1.2.3",
+   "name": "prosemirror-keymap",
+   "version": "1.2.3",
+   "purl": "pkg:npm/prosemirror-keymap@1.2.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-4HucRlpiLd1IPQQXNqeo81BGtkY8Ai5smHhKW9jjPKRc2wQIxksg7Hl1tTI2IfT2B/LgX6bfYvXxEpJl7aKYKw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-markdown@1.13.2",
+   "name": "prosemirror-markdown",
+   "version": "1.13.2",
+   "purl": "pkg:npm/prosemirror-markdown@1.13.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-FPD9rHPdA9fqzNmIIDhhnYQ6WgNoSWX9StUZ8LEKapaXU9i6XgykaHKhp6XMyXlOWetmaFgGDS/nu/w9/vUc5g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-model@1.25.4",
+   "name": "prosemirror-model",
+   "version": "1.25.4",
+   "purl": "pkg:npm/prosemirror-model@1.25.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-PIM7E43PBxKce8OQeezAs9j4TP+5yDpZVbuurd1h5phUxEKIu+G2a+EUZzIC5nS1mJktDJWzbqS23n1tsAf5QA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-state@1.4.4",
+   "name": "prosemirror-state",
+   "version": "1.4.4",
+   "purl": "pkg:npm/prosemirror-state@1.4.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-6jiYHH2CIGbCfnxdHbXZ12gySFY/fz/ulZE333G6bPqIZ4F+TXo9ifiR86nAHpWnfoNjOb3o5ESi7J8Uz1jXHw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-transform@1.10.5",
+   "name": "prosemirror-transform",
+   "version": "1.10.5",
+   "purl": "pkg:npm/prosemirror-transform@1.10.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-RPDQCxIDhIBb1o36xxwsaeAvivO8VLJcgBtzmOwQ64bMtsVFh5SSuJ6dWSxO1UsHTiTXPCgQm3PDJt7p6IOLbw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-utils@1.2.2",
+   "name": "prosemirror-utils",
+   "version": "1.2.2",
+   "purl": "pkg:npm/prosemirror-utils@1.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-7a2MPf99oCW8/587rQYI1/snX71Ban40+apr1hLkY8TmU9YXd7JeR6QsmktcTisJURO3WRjxIia4lTMsYgZVOw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/prosemirror-view@1.41.5",
+   "name": "prosemirror-view",
+   "version": "1.41.5",
+   "purl": "pkg:npm/prosemirror-view@1.41.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UDQbIPnDrjE8tqUBbPmCOZgtd75htE6W3r0JCmY9bL6W1iemDM37MZEKC49d+tdQ0v/CKx4gjxLoLsfkD2NiZA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/punycode.js@2.3.1",
+   "name": "punycode.js",
+   "version": "2.3.1",
+   "purl": "pkg:npm/punycode.js@2.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/raf-schd@4.0.3",
+   "name": "raf-schd",
+   "version": "4.0.3",
+   "purl": "pkg:npm/raf-schd@4.0.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-tQkJl2GRWh83ui2DiPTJz9wEiMN20syf+5oKfB03yYP7ioZcJwsIK8FjrtLwH1m7C7e+Tt2yYBlrOpdT+dyeIQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-clientside-effect@1.2.8",
+   "name": "react-clientside-effect",
+   "version": "1.2.8",
+   "purl": "pkg:npm/react-clientside-effect@1.2.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ma2FePH0z3px2+WOu6h+YycZcEvFmmxIlAb62cF52bG86eMySciO/EQZeQMXd07kPCYB0a1dWDT5J+KE9mCDUw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-dom@18.3.1",
+   "name": "react-dom",
+   "version": "18.3.1",
+   "purl": "pkg:npm/react-dom@18.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-fast-compare@3.2.2",
+   "name": "react-fast-compare",
+   "version": "3.2.2",
+   "purl": "pkg:npm/react-fast-compare@3.2.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-focus-lock@2.13.7",
+   "name": "react-focus-lock",
+   "version": "2.13.7",
+   "purl": "pkg:npm/react-focus-lock@2.13.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-20lpZHEQrXPb+pp1tzd4ULL6DyO5D2KnR0G69tTDdydrmNhU7pdFmbQUYVyHUgp+xN29IuFR0PVuhOmvaZL9Og=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-hook-form@7.65.0",
+   "name": "react-hook-form",
+   "version": "7.65.0",
+   "purl": "pkg:npm/react-hook-form@7.65.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-xtOzDz063WcXvGWaHgLNrNzlsdFgtUWcb32E6WFaGTd7kPZG3EeDusjdZfUsPwKCKVXy1ZlntifaHZ4l8pAsmw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-is@16.13.1",
+   "name": "react-is",
+   "version": "16.13.1",
+   "purl": "pkg:npm/react-is@16.13.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-is@18.3.1",
+   "name": "react-is",
+   "version": "18.3.1",
+   "purl": "pkg:npm/react-is@18.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-magnetic-di@3.2.5",
+   "name": "react-magnetic-di",
+   "version": "3.2.5",
+   "purl": "pkg:npm/react-magnetic-di@3.2.5",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Ys0noNfKOlnU7nPk7j8V/OxvXe66XMnXwtie8phGsHbPLOHzua82C5aWW1UUzMCWR9F4kBej8VErFq2TndFDkw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-popper@2.3.0",
+   "name": "react-popper",
+   "version": "2.3.0",
+   "purl": "pkg:npm/react-popper@2.3.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-e1hj8lL3uM+sgSR4Lxzn5h1GxBlpa4CQz0XLF8kx4MDrDRWY0Ena4c97PUeSX9i5W3UAfDP0z0FXCTQkoXUl3Q=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-reconciler@0.29.2",
+   "name": "react-reconciler",
+   "version": "0.29.2",
+   "purl": "pkg:npm/react-reconciler@0.29.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-zZQqIiYgDCTP/f1N/mAR10nJGrPD2ZR+jDSEsKWJHYC7Cm2wodlwbR3upZRdC3cjIjSlTLNVyO7Iu0Yy7t2AYg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-scrolllock@5.0.1",
+   "name": "react-scrolllock",
+   "version": "5.0.1",
+   "purl": "pkg:npm/react-scrolllock@5.0.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-poeEsjnZAlpA6fJlaNo4rZtcip2j6l5mUGU/SJe1FFlicEudS943++u7ZSdA7lk10hoyYK3grOD02/qqt5Lxhw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-shallow-renderer@16.15.0",
+   "name": "react-shallow-renderer",
+   "version": "16.15.0",
+   "purl": "pkg:npm/react-shallow-renderer@16.15.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-oScf2FqQ9LFVQgA73vr86xl2NaOIX73rh+YFqcOp68CWj56tSfgtGKrEbyhCj0rSijyG9M1CYprTh39fBi5hzA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-test-renderer@18.3.1",
+   "name": "react-test-renderer",
+   "version": "18.3.1",
+   "purl": "pkg:npm/react-test-renderer@18.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-KkAgygexHUkQqtvvx/otwxtuFu5cVjfzTCtjXLH9boS19/Nbtg84zS7wIQn39G8IlrhThBpQsMKkq5ZHZIYFXA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react-uid@2.4.0",
+   "name": "react-uid",
+   "version": "2.4.0",
+   "purl": "pkg:npm/react-uid@2.4.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+MVs/25NrcZuGrmlVRWPOSsbS8y72GJOBsR7d68j3/wqOrRBF52U29XAw4+XSelw0Vm6s5VmGH5mCbTCPGVCVg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/react@18.3.1",
+   "name": "react",
+   "version": "18.3.1",
+   "purl": "pkg:npm/react@18.3.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/require-from-string@2.0.2",
+   "name": "require-from-string",
+   "version": "2.0.2",
+   "purl": "pkg:npm/require-from-string@2.0.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/resolve-from@4.0.0",
+   "name": "resolve-from",
+   "version": "4.0.0",
+   "purl": "pkg:npm/resolve-from@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/resolve@1.22.13",
+   "name": "resolve",
+   "version": "1.22.13",
+   "purl": "pkg:npm/resolve@1.22.13",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Dj/cW9zBV2aRj6XzCxuGIs3ESZKv02jixne3q6jFZYZ3/Tg09gHHviSMDL4kObh9pqSahdRHEnDoaP2gn8YLhA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/rope-sequence@1.3.4",
+   "name": "rope-sequence",
+   "version": "1.3.4",
+   "purl": "pkg:npm/rope-sequence@1.3.4",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UT5EDe2cu2E/6O4igUr5PSFs23nvvukicWHx6GnOPlHAiiYbzNuCRQCuiUdHJQcqKalLKlrYJnjY0ySGsXNQXQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/safer-buffer@2.1.2",
+   "name": "safer-buffer",
+   "version": "2.1.2",
+   "purl": "pkg:npm/safer-buffer@2.1.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/scheduler@0.23.2",
+   "name": "scheduler",
+   "version": "0.23.2",
+   "purl": "pkg:npm/scheduler@0.23.2",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/shallow-equal@3.1.0",
+   "name": "shallow-equal",
+   "version": "3.1.0",
+   "purl": "pkg:npm/shallow-equal@3.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-pfVOw8QZIXpMbhBWvzBISicvToTiM5WBF1EeAUZDDSb5Dt29yl4AYbyywbJFSEsRUMr7gJaxqCdr4L3tQf9wVg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/source-map@0.5.7",
+   "name": "source-map",
+   "version": "0.5.7",
+   "purl": "pkg:npm/source-map@0.5.7",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-LbrmJOMUSdEVxIKvdcJzQC+nQhe8FUZQTXQy6+I75skNgn3OoQ0DZA8YnFa7gp8tqtL3KPf1kmo0R5DoApeSGQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/stylis@4.2.0",
+   "name": "stylis",
+   "version": "4.2.0",
+   "purl": "pkg:npm/stylis@4.2.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Orov6g6BB1sDfYgzWfTHDOxamtX1bE/zo104Dh9e6fqJ3PooipYyfJ0pUmrZO2wAvO8YbEyeFrkV91XTsGMSrw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/supports-preserve-symlinks-flag@1.0.0",
+   "name": "supports-preserve-symlinks-flag",
+   "version": "1.0.0",
+   "purl": "pkg:npm/supports-preserve-symlinks-flag@1.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tabbable@1.1.3",
+   "name": "tabbable",
+   "version": "1.1.3",
+   "purl": "pkg:npm/tabbable@1.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-nOWwx35/JuDI4ONuF0ZTo6lYvI0fY0tZCH1ErzY2EXfu4az50ZyiUX8X073FLiZtmWUVlkRnuXsehjJgCw9tYg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tiny-invariant@1.3.3",
+   "name": "tiny-invariant",
+   "version": "1.3.3",
+   "purl": "pkg:npm/tiny-invariant@1.3.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-+FbBPE1o9QAYvviau/qC5SE3caw21q3xkvWKBtja5vgqOWIHHJ3ioaq1VPfn/Szqctz2bU/oYeKd9/z5BL+PVg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tslib@2.8.1",
+   "name": "tslib",
+   "version": "2.8.1",
+   "purl": "pkg:npm/tslib@2.8.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "0BSD"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/typescript@5.9.3",
+   "name": "typescript",
+   "version": "5.9.3",
+   "purl": "pkg:npm/typescript@5.9.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/uc.micro@2.1.0",
+   "name": "uc.micro",
+   "version": "2.1.0",
+   "purl": "pkg:npm/uc.micro@2.1.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-ARDJmphmdvUk6Glw7y9DQ2bFkKBHwQHLi2lsaH6PPmz/Ka9sFOBsBluozhDltWmnv9u/cF6Rt87znRTPV+yp/A=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/undici@7.30.1",
+   "name": "undici",
+   "version": "7.30.1",
+   "purl": "pkg:npm/undici@7.30.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-03KrMbjIFDWQR5RNPrSw3bd1r12JpyFQl9/yxjUbJtqkjmllqC5lFjZh6ujeuJCKr8EOQvRW872Oy/az+nLYxg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/use-callback-ref@1.3.3",
+   "name": "use-callback-ref",
+   "version": "1.3.3",
+   "purl": "pkg:npm/use-callback-ref@1.3.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-jQL3lRnocaFtu3V00JToYz/4QkNWswxijDaCVNZRiRTO3HQDLsdu1ZtmIUvV4yPp+rvWm5j0y0TG/S61cuijTg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/use-isomorphic-layout-effect@1.2.1",
+   "name": "use-isomorphic-layout-effect",
+   "version": "1.2.1",
+   "purl": "pkg:npm/use-isomorphic-layout-effect@1.2.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-tpZZ+EX0gaghDAiFR37hj5MgY6ZN55kLiPkJsKxBMZ6GZdOSPJXiOzPM984oPYZ5AnehYx5WQp1+ME8I/P/pRA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/use-memo-one@1.1.3",
+   "name": "use-memo-one",
+   "version": "1.1.3",
+   "purl": "pkg:npm/use-memo-one@1.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-g66/K7ZQGYrI6dy8GLpVcMsBp4s17xNkYJVSMvTEevGy3nDxHOfE6z8BVE22+5G5x7t3+bhzrlTDB7ObrEE0cQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/use-sidecar@1.1.3",
+   "name": "use-sidecar",
+   "version": "1.1.3",
+   "purl": "pkg:npm/use-sidecar@1.1.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/uuid@11.1.1",
+   "name": "uuid",
+   "version": "11.1.1",
+   "purl": "pkg:npm/uuid@11.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-vIYxrBCC/N/K+Js3qSN88go7kIfNPssr/hHCesKCQNAjmgvYS2oqr69kIufEG+O4+PfezOH4EbIeHCfFov8ZgQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/w3c-keyname@2.2.8",
+   "name": "w3c-keyname",
+   "version": "2.2.8",
+   "purl": "pkg:npm/w3c-keyname@2.2.8",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/warning@4.0.3",
+   "name": "warning",
+   "version": "4.0.3",
+   "purl": "pkg:npm/warning@4.0.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/whatwg-encoding@3.1.1",
+   "name": "whatwg-encoding",
+   "version": "3.1.1",
+   "purl": "pkg:npm/whatwg-encoding@3.1.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/whatwg-mimetype@4.0.0",
+   "name": "whatwg-mimetype",
+   "version": "4.0.0",
+   "purl": "pkg:npm/whatwg-mimetype@4.0.0",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/yaml@1.10.3",
+   "name": "yaml",
+   "version": "1.10.3",
+   "purl": "pkg:npm/yaml@1.10.3",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-vIYeF1u3CjlhAFekPPAk2h/Kv4T3mAkMox5OymRiJQB0spDP10LHvt+K7G9Ny6NuuMAb25/6n1qyUjAcGNf/AA=="
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/yaml@2.9.1",
+   "name": "yaml",
+   "version": "2.9.1",
+   "purl": "pkg:npm/yaml@2.9.1",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "npm:integrity",
+     "value": "sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw=="
+    }
+   ]
+  }
+ ]
+}
