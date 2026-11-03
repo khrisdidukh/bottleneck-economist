@@ -129,11 +129,20 @@ export async function dailyGraphRefresh() {
 }
 
 // ---------- Rovo actions / MCP tools
-const projectFrom = (payload: any): string | undefined => (payload?.projectKey || payload?.context?.jira?.projectKey)?.toString().trim().toUpperCase();
+// Input validation: a Jira project key is letters, digits and underscores (max 20); anything else is treated as absent.
+const projectFrom = (payload: any): string | undefined => {
+  const k = (payload?.projectKey || payload?.context?.jira?.projectKey)?.toString().trim().toUpperCase();
+  return k && /^[A-Z][A-Z0-9_]{0,19}$/.test(k) ? k : undefined;
+};
+// Look-back window: whole days between 7 and 730, default 365.
+const daysFrom = (payload: any): number => {
+  const d = Math.round(Number(payload?.lookbackDays));
+  return Number.isFinite(d) && d > 0 ? Math.min(730, Math.max(7, d)) : 365;
+};
 
 export async function analyzeFlow(payload: any) {
   const projectKey = projectFrom(payload);
-  const days = Number(payload?.lookbackDays) || 365;
+  const days = daysFrom(payload);
   if (isDemo(projectKey, payload?.demoMode)) return compact(demoReport(await moneyFor(DEMO_KEY)));
   if (!(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report, job } = await getReport(projectKey!, days);
@@ -144,7 +153,7 @@ export async function analyzeFlow(payload: any) {
 
 export async function getAnalysisStatus(payload: any) {
   const projectKey = projectFrom(payload);
-  const days = Number(payload?.lookbackDays) || 365;
+  const days = daysFrom(payload);
   if (isDemo(projectKey, payload?.demoMode)) return compact(demoReport(await moneyFor(DEMO_KEY)));
   if (!(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report, job } = await getReport(projectKey!, days);
@@ -154,23 +163,27 @@ export async function getAnalysisStatus(payload: any) {
 }
 
 function scenarioFrom(payload: any): Scenario {
-  const lever = String(payload?.lever ?? 'automate') as Scenario['lever'];
-  const pct = (v: any) => (v === undefined || v === null || v === '' ? undefined : Math.max(0, Math.min(0.95, Number(v) > 1 ? Number(v) / 100 : Number(v))));
+  const LEVERS = ['automate', 'hire', 'move', 'free', 'policy'];
+  const raw = String(payload?.lever ?? 'automate');
+  const lever = (LEVERS.includes(raw) ? raw : 'automate') as Scenario['lever'];
+  const pct = (v: any) => (v === undefined || v === null || v === '' || !Number.isFinite(Number(v)) ? undefined : Math.max(0, Math.min(0.95, Number(v) > 1 ? Number(v) / 100 : Number(v))));
+  const people = (v: any) => (v === undefined || !Number.isFinite(Number(v)) ? undefined : Math.max(0, Math.min(50, Math.round(Number(v)))));
+  const status = String(payload?.status ?? '').slice(0, 100);
   return {
-    label: payload?.label ?? `${lever} at ${payload?.status}`,
+    label: String(payload?.label ?? `${lever} at ${status}`).slice(0, 120),
     lever,
-    status: String(payload?.status ?? ''),
+    status,
     automationPct: pct(payload?.automationPct),
     queueCutPct: pct(payload?.queueCutPct),
-    addPeople: payload?.addPeople !== undefined ? Number(payload.addPeople) : undefined,
-    removePeople: payload?.removePeople !== undefined ? Number(payload.removePeople) : undefined,
-    hire: lever === 'hire' ? Number(payload?.addPeople ?? 1) : undefined,
+    addPeople: people(payload?.addPeople),
+    removePeople: people(payload?.removePeople),
+    hire: lever === 'hire' ? people(payload?.addPeople ?? 1) : undefined,
   };
 }
 
 export async function simulateWhatIf(payload: any) {
   const projectKey = projectFrom(payload);
-  const days = Number(payload?.lookbackDays) || 365;
+  const days = daysFrom(payload);
   if (!isDemo(projectKey, payload?.demoMode) && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report } = await getReport(projectKey ?? DEMO_KEY, days, payload?.demoMode);
   if (!report) return { status: 'not-ready', message: 'Run analyze-flow first.' };
@@ -194,7 +207,7 @@ export async function simulateWhatIf(payload: any) {
 
 export async function recommendActions(payload: any) {
   const projectKey = projectFrom(payload);
-  const days = Number(payload?.lookbackDays) || 365;
+  const days = daysFrom(payload);
   if (!isDemo(projectKey, payload?.demoMode) && !(await userCan(projectKey, 'BROWSE_PROJECTS'))) return DENIED;
   const { report } = await getReport(projectKey ?? DEMO_KEY, days, payload?.demoMode);
   if (!report) return { status: 'not-ready', message: 'Run analyze-flow first.' };
